@@ -30,7 +30,7 @@ site_description2: >-
 
 # Repository
 repo_name: Raise an issue
-repo_url: https://github.com/spnizen/cognitive-automation/issues/new
+repo_url: https://github.com/spnizen/cognitive-automation
 
 
 # Copyright
@@ -137,7 +137,7 @@ markdown_extensions:
   - pymdownx.keys
   - pymdownx.magiclink:
       repo_url_shorthand: true
-      user: squidfunk
+      user: squidfunk-sridhar
       repo: mkdocs-material
   - pymdownx.mark
   - pymdownx.smartsymbols
@@ -156,23 +156,8 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Getting started:
-    - Installation of Software: getting-started.md
-    - Setting your Local Environment: setting-up-your-local.md
-    - Create Squad Repo on Github: creating-your-site-repo.md
-    - Clone & Copy the Master Site: cloning-the-master-site.md
-    - Publishing your site: publishing-your-site.md
-    - Access IBM Cloud: access-ibm-cloud.md
-    - Create a Python Flask Application: create-python-flask-app.md
-    - Run the Python Flask App Locally: run-python-flask-app-locally.md
-    - Create the Flask GIT Microservice: create-flask-git-microservice.md
-    - Access ServiceNow Cloud: access-servicenow-cloud.md    
-    - Create the Flask SNow Microservice: create-flask-snow-microservice.md
-    - Create Cognitive Conversations with Watson API: cccwwatson.md
-    - Integrate Watson with github pages: int-with-github-site.md
-    - Browser support: browser-support.md
     - License: license.md
-    - Markdown Cheatsheet: cheatsheet.md    
-  - AXA Account:
+  - Account Information:
     - Customer Overivew: account/overview.md
     - Delivery Organization: account/CIC-delivery-org.md
     - Team Details: account/team-details.md
