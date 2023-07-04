@@ -1,6 +1,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>    
                 
-<canvas id="myChart" style="width:100%;max-width:550px;text-decoration-color:white;"></canvas>
+<canvas id="myChart" style="height:490px;width:90%;text-decoration-color:white;"></canvas>
 
 <script>
 var data1 = [121, 19, 3, 5, 2, 3, 20]
@@ -40,34 +40,34 @@ var chartData = {
              stacked: false,
                 gridLines: {
                     display: true,
-                    color: '#FFF'
+                    color: 'blue'
                 },
                 scaleLabel: {
                     display: true,
-                    labelString: 'Incident Count',
-                    fontColor: '#FFF',
-                    fontSize: 20
+                    labelString: 'Event Count',
+                    fontColor: 'blue',
+                    fontSize: 14    
                 },
                 ticks: {
-                    fontColor: "white",
-                    fontSize: 10
+                    fontColor: "blue",
+                    fontSize: 14
                 } 
           }],
           xAxes: [{
              stacked: false,
                 gridLines: {
                     display: false,
-                    color: '#FFF',
+                    color: 'grey',
                 },
                 scaleLabel: {
                     display: true,
-                    labelString: 'Squads',
-                    fontColor: '#FFF',
+                    labelString: 'Cloud Infrastructure',
+                    fontColor: 'blue',
                     fontSize: 20
                 },
                 ticks: {
-                    fontColor: "white",
-                    fontSize: 12
+                    fontColor: "blue",
+                    fontSize: 14
                 } 
           }]
        },
@@ -94,16 +94,16 @@ var chartData = {
     },
         legend: {
                 labels: {
-                    fontColor: "white",
+                    fontColor: "black",
                     fontSize: 10
                 },
                 display: true
             },
         title: {
             display: true,
-            text: "Daily Incident Report",
-            fontColor: '#FFF',
-            fontSize: 12,
+            text: "Live Events Categorization",
+            fontColor: 'black',
+            fontSize: 14,
             borderColor: '#000011'
         }
  
