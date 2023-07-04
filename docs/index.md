@@ -1,6 +1,6 @@
 ---
 template: overrides/home.html
-title: AXA PIaaS & CoreIT Site Reliability Engineering Program
+title: ExtremeSpartan - Cognitive Automation for Cloud Infrastructure
 ---
 
-HELLO WHATS UP!!
+ExtremeSpartan Automation Solution is built by Sridhar P Naidu - Chief Architect and Sole Programmer.
