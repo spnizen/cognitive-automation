@@ -185,7 +185,7 @@ nav:
             - Monthly: 
                 - PIAAS: squads/service/reports/monthly/PM_report.md
                 - InfraIT: squads/service/reports/monthly/CM_report.md   
-    - CPS: 
+    - Applications: 
         - Overivew: squads/cps/overview.md
         - Architecture: squads/cps/architecture.md
         - Technologies: squads/cps/technologies.md
@@ -382,7 +382,7 @@ nav:
             - Half-Yealy: squads/security/reports/halfyearly/hy1-2.md
             - Yealy: squads/security/reports/yearly/YearXXXX.md
         - ROTA: squads/security/rota.md 
-    - New Squad: 
+    - Databases: 
         - Overivew: squads/security/overview.md
         - Architecture: squads/security/architecture.md
         - Technologies: squads/security/technologies.md
