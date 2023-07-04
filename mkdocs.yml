@@ -228,7 +228,7 @@ nav:
             - Half-Yealy: squads/cps/reports/halfyearly/hy1-2.md
             - Yealy: squads/cps/reports/yearly/YearXXXX.md
         - ROTA: squads/cps/rota.md       
-    - Server Build: 
+    - VMWare: 
         - Overivew: squads/build/overview.md
         - Architecture: squads/build/architecture.md
         - Technologies: squads/build/technologies.md
@@ -397,40 +397,66 @@ nav:
             - Half-Yealy: squads/security/reports/halfyearly/hy1-2.md
             - Yealy: squads/security/reports/yearly/YearXXXX.md
         - ROTA: squads/security/rota.md 
-    - Platform: 
-        - Overivew: squads/platform/overview.md
-        - Architecture: squads/platform/architecture.md
-        - Technologies: squads/platform/technologies.md
-        - Windiows: 
-            - Overivew: squads/platform/windows/overview.md
-            - Architecture: squads/platform/windows/architecture.md
-            - Technologies: squads/platform/windows/technologies.md
-            - Installation & Setup Guide: squads/platform/windows/isg.md
-            - Maintenace & Operations Guide: squads/platform/windows/mog.md
-            - Trouble Shooting Guide: squads/platform/windows/tsg.md
-            - Reports:
-                - Daily: squads/platform/windows/reports/daily/dr1-31.md
-                - Weekly: squads/platform/windows/reports/weekly/wr1-56.md
-                - Monthly: squads/platform/windows/reports/monthly/mr1-12.md
-                - Quaterly: squads/platform/windows/reports/quaterly/qtr1-4.md
-                - Half-Yealy: squads/platform/windows/reports/halfyearly/hy1-2.md
-                - Yealy: squads/platform/windows/reports/yearly/YearXXXX.md
-            - ROTA: squads/platform/windows/rota.md 
-        - Linux: 
-            - Overivew: squads/platform/linux/overview.md
-            - Architecture: squads/platform/linux/architecture.md
-            - Technologies: squads/platform/linux/technologies.md
-            - Installation & Setup Guide: squads/platform/linux/isg.md
-            - Maintenace & Operations Guide: squads/platform/linux/mog.md
-            - Trouble Shooting Guide: squads/platform/linux/tsg.md
-            - Reports:
-                - Daily: squads/platform/linux/reports/daily/dr1-31.md
-                - Weekly: squads/platform/linux/reports/weekly/wr1-56.md
-                - Monthly: squads/platform/linux/reports/monthly/mr1-12.md
-                - Quaterly: squads/platform/linux/reports/quaterly/qtr1-4.md
-                - Half-Yealy: squads/platform/linux/reports/halfyearly/hy1-2.md
-                - Yealy: squads/platform/linux/reports/yearly/YearXXXX.md
-            - ROTA: squads/platform/linux/rota.md 
+    - MainFrame: 
+        - Overivew: squads/mf/overview.md
+        - Architecture: squads/mf/architecture.md
+        - Technologies: squads/mf/technologies.md
+        - Installation & Setup Guide: squads/mf/isg.md
+        - Maintenace & Operations Guide: squads/mf/mog.md
+        - Trouble Shooting Guide: squads/mf/tsg.md
+        - Reports:
+            - Daily: squads/mf/reports/daily/dr1-31.md
+            - Weekly: squads/mf/reports/weekly/wr1-56.md
+            - Monthly: squads/mf/reports/monthly/mr1-12.md
+            - Quaterly: squads/mf/reports/quaterly/qtr1-4.md
+            - Half-Yealy: squads/mf/reports/halfyearly/hy1-2.md
+            - Yealy: squads/mf/reports/yearly/YearXXXX.md
+        - ROTA: squads/mf/rota.md 
+    - AS400/iSeries: 
+        - Overivew: squads/as400/overview.md
+        - Architecture: squads/as400/architecture.md
+        - Technologies: squads/as400/technologies.md
+        - Installation & Setup Guide: squads/as400/isg.md
+        - Maintenace & Operations Guide: squads/as400/mog.md
+        - Trouble Shooting Guide: squads/as400/tsg.md
+        - Reports:
+            - Daily: squads/as400/reports/daily/dr1-31.md
+            - Weekly: squads/as400/reports/weekly/wr1-56.md
+            - Monthly: squads/as400/reports/monthly/mr1-12.md
+            - Quaterly: squads/as400/reports/quaterly/qtr1-4.md
+            - Half-Yealy: squads/as400/reports/halfyearly/hy1-2.md
+            - Yealy: squads/as400/reports/yearly/YearXXXX.md
+        - ROTA: squads/as400/rota.md 
+    - Windiows: 
+        - Overivew: squads/windows/overview.md
+        - Architecture: squads/windows/architecture.md
+        - Technologies: squads/windows/technologies.md
+        - Installation & Setup Guide: squads/windows/isg.md
+        - Maintenace & Operations Guide: squads/windows/mog.md
+        - Trouble Shooting Guide: squads/windows/tsg.md
+        - Reports:
+            - Daily: squads/windows/reports/daily/dr1-31.md
+            - Weekly: squads/windows/reports/weekly/wr1-56.md
+            - Monthly: squads/windows/reports/monthly/mr1-12.md
+            - Quaterly: squads/windows/reports/quaterly/qtr1-4.md
+            - Half-Yealy: squads/windows/reports/halfyearly/hy1-2.md
+            - Yealy: squads/windows/reports/yearly/YearXXXX.md
+        - ROTA: squads/windows/rota.md 
+    - Linux: 
+        - Overivew: squads/linux/overview.md
+        - Architecture: squads/linux/architecture.md
+        - Technologies: squads/linux/technologies.md
+        - Installation & Setup Guide: squads/linux/isg.md
+        - Maintenace & Operations Guide: squads/linux/mog.md
+        - Trouble Shooting Guide: squads/linux/tsg.md
+        - Reports:
+            - Daily: squads/linux/reports/daily/dr1-31.md
+            - Weekly: squads/linux/reports/weekly/wr1-56.md
+            - Monthly: squads/linux/reports/monthly/mr1-12.md
+            - Quaterly: squads/linux/reports/quaterly/qtr1-4.md
+            - Half-Yealy: squads/linux/reports/halfyearly/hy1-2.md
+            - Yealy: squads/linux/reports/yearly/YearXXXX.md
+        - ROTA: squads/linux/rota.md 
   - SRE: 
     - Overview and Status: sre/overview.md
     - Processes & Guidelines: sre/pag.md
@@ -468,21 +494,18 @@ nav:
             - My Extensions: sre/aiops/automation-primary.md
     - Automation Tools:
         - Overview: sre/8tools/overview.md
-        - CACF: sre/8tools/cacf.md
         - Integrated AI-Ops: sre/8tools/mie.md      
         - ChatOps: sre/8tools/chatops.md
-        - M&EaaS: sre/8tools/mneaas.md
+        - Obeservability: sre/8tools/mneaas.md
         - SFoW: sre/8tools/sfow.md
-        - SAT: sre/8tools/sat.md
-        - HW/SW: sre/8tools/hwsw.md
         - Ansible: sre/ansible.md
         - Python: sre/python.md
         - NodeJS: sre/nodejs.md
         - Power Automate: sre/powerautomate.md
-    - CIP: 
+    - Continuous Improvement: 
         - Overview: sre/cip/overview.md
         - Ideas: sre/cip/ideas.md
-    - SIP: 
+    - Services Improvement: 
         - Overview: sre/sip/overview.md
         - Finding & Recommendations: sre/sip/audit.md 
     - Approach for Troubleshooting: sre/troubleshooting.md
