@@ -39,24 +39,19 @@ IT Service Management or ITSM is the set of activities that can help manage the 
 ## 3. The Team 
 |     Name               |            Email                    |       Role             |
 | :--------------------- | :---------------------------------- | :--------------------- | 
-|   Anitha Kodigemakki   |   Anitha.kodigemakki@enterprise.com    |    Squad Lead          |
-|   Penin Priya          |   Penin.Priya@enterprise.com           |    Team Lead           |
-|   Avinash PB           |   Avinash.Pb@enterprise.com            |    SAM/IM              |
-|   Jitendu Daspatnaik   |   Jitendu.Daspatnaik@enterprise.com    |    SAM/IM              |
-|   Abhishek Anand       |   Abhishek.Anand@enterprise.com        |    SAM/IM              |
-|   Vidyadhar Bidaralli  |   Vidyadhar.Bidaralli@enterprise.com   |    SAM/IM              |
-|   Sreeranga Raghavan   |   Sreeranga.Raghavan@enterprise.com    |    Problem Manager     |
-|   Rekha Pandey         |   Rekha.Pandey@enterprise.com          |    Change Manager      |
-|   Seema Vijay          |   Seema.Vijay@enterprise.com           |    Change Manager      |
-|   Suma Maraiah         |   Suma.Maraiah@enterprise.com          |    Reporting Lead      |
-|   Abbas Ali R          |   Abbas.Ali.R@enterprise.com           |    Reporting Analyst   |
+|   SME Name             |   firstName.lastName@enterprise.com    |    Squad Lead          |
+|   SME Name             |   firstName.lastName@enterprise.com          |    Team Lead           |
+|   SME Name    |   firstName.lastName@enterprise.com    |    Problem Manager     |
+|   SME Name        |   firstName.lastName@enterprise.com         |    Change Manager      |
+|   SME Name        |   firstName.lastName@enterprise.com        |    Reporting Lead      |
+|   SME Name           |   firstName.lastName@enterprise.com         |    Reporting Analyst   |
 |         |            |     |
 
 
 
 ## 4. SM Organization Chart
 
-![CACF](../service/assets/images/smorgchart1.png)
+![CACF](../service/assets/images/chart1.png)
 
 ## 5. Roles & Responsibilities
 
@@ -97,7 +92,7 @@ IT Service Management or ITSM is the set of activities that can help manage the 
 ## 6. Enterprise Service Level Management
 ### 6.1 Enterprise-Enterprise: Agreed SLA/KPI penalty & non-penalty
 ???+ SLA_KPI
-    ![CACF](../service/assets/images/sla.png)
+    ![CACF](../service/assets/images/slaa.png)
 
 ### 6.2. Top 3 Cloud KPIs (penalty)
 
