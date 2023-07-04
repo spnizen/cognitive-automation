@@ -78,7 +78,7 @@ title: Getting started
 
 • Applications are subject to the same fine-grained, role-based security.
 
-![3M Tool UPdate Application](../assets/images/AXACloudExplorer.png)
+![3M Tool UPdate Application](../assets/images/EnterpriseCloudExplorer.png)
 
 ![3M Tool Existing Customization](../assets/images/UpdateExistingCust.png)
 
@@ -115,9 +115,9 @@ title: Getting started
 
 #### 1.4 Sample Applications as below
 
-![3M Tool Sample App1](../assets/images/AXACloudExplorer.png)
+![3M Tool Sample App1](../assets/images/EnterpriseCloudExplorer.png)
 
-![3M Tool Sample App2](../assets/images/AXAvolumeUsage.png)
+![3M Tool Sample App2](../assets/images/EnterprisevolumeUsage.png)
 
 ![3M Tool Sample App3](../assets/images/VMSearchTool.png)
 

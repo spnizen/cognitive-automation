@@ -24,23 +24,23 @@ Compressing objects: 100% (5/5), done.
 Writing objects: 100% (5/5), 636 bytes | 636.00 KiB/s, done.
 Total 5 (delta 3), reused 0 (delta 0), pack-reused 0
 remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
-remote: detect-secrets-stream ver=manual-kyndryl-manual-kyndryl FAQ: https://pages.github.kyndryl.net/river/detect-secrets-pages
+remote: detect-secrets-stream ver=manual-enterprise-manual-enterprise FAQ: https://pages.github.enterprise.net/river/detect-secrets-pages
 remote:
 remote: Successfully send push metadata.
 remote: Push info collect pre-receive hook finished within 3 seconds.
-To https://github.kyndryl.net/AXA-Europe/8-Tools-Enablement.git
+To https://github.enterprise.net/Enterprise-Europe/8-Tools-Enablement.git
    d874bc5..d59a48b  gh-pages -> gh-pages
 INFO     -  Your documentation should be available shortly.
 ```
 
 ## View the remote site on browser
 
-Open a browser and tune to "https://github.kyndryl.net/<Org name>/<repository name>.git" and press the "Enter" key to bring up the remote github site as shown below:
+Open a browser and tune to "https://github.enterprise.net/<Org name>/<repository name>.git" and press the "Enter" key to bring up the remote github site as shown below:
 
 
 Click on the tab:"Settings" and once the settings page is displayed, click on "Pages" in the left navigation which display the GitHub Pages landing page with a message as shown below:
 ```
-Your site is published at https://pages.github.kyndryl.net/<Org name>/<repository name>/
+Your site is published at https://pages.github.enterprise.net/<Org name>/<repository name>/
 ```
 Point the cursor and right+click the pointing device to open the site in a new browser tab.
 

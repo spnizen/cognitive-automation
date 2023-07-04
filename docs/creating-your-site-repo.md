@@ -2,7 +2,7 @@
 template: overrides/main.html
 ---
 
-# Cloning the AXA site from Kyndryl GitHub 
+# Cloning the Enterprise site from Enterprise GitHub 
 
 ???+ important " QUICK SETUP GUIDE "
     ``` mermaid
@@ -15,21 +15,21 @@ template: overrides/main.html
             E-->F
             F-->G
             G-->End([End])
-            click A "./#signing-into-kyndryl-github-site"
+            click A "./#signing-into-enterprise-github-site"
             click B "./#editing-github-profile"
-            click C "./#notify-sres-to-grant-access-to-axa-repository"
-            click D "./#creating-a-repository-under-axa-organization"
+            click C "./#notify-sres-to-grant-access-to-sre-repository"
+            click D "./#creating-a-repository-under-sre-organization"
             click E "./#copying-the-github-repository-https-url"
             click F "./#cloning-the-repository-on-local"
-            click G "./#previewing-axa-site-on-local"
+            click G "./#previewing-sre-site-on-local"
     ```
-    __A__ = Login into Kyndryl GitHub  
+    __A__ = Login into Enterprise GitHub  
     __B__ = Editing the Git Profile  
     __C__ = Notify SRE's to Grant Access  
     __D__ = Create New Repository  
     __E__ = Copy the Repo URL;  
     __F__ = Cloning the Repo on Local  
-    __G__ = Prewview AXA Site on Local
+    __G__ = Prewview Enterprise Site on Local
 
 After you've [installed](./getting-started.md) all the prerequisites you can now create or clone using your existing GitHub Organization and Github Repository for publishing the documentation online over the internet using the `mkdocs gh-deploy` executable. 
 
@@ -39,12 +39,12 @@ After you've [installed](./getting-started.md) all the prerequisites you can now
     provides its own [schema.json][^1] for `mkdocs.yml`. If your editor supports
     YAML schema validation, it's definitely recommended to set it up:
 
-## Signing into Kyndryl GitHub site   
+## Signing into Enterprise GitHub site   
 
-Tune your browser or click on the URL: [https://github.kyndryl.net/AXA-Europe](https://github.kyndryl.net/AXA-Europe) and if already not authenticated login with your Ocean Id and Password. On sucessful authenication you should be at this below landing page.
+Tune your browser or click on the URL: [https://github.enterprise.net/Enterprise-Europe](https://github.enterprise.net/Enterprise-Europe) and if already not authenticated login with your Ocean Id and Password. On sucessful authenication you should be at this below landing page.
   ![Windows Command Prompt](assets/images/EditGitProfile.png)
 
-  #1. If you do not see the ORG "AXA-Europe" proceed to next step else jump and perform tasks from step#10 thru #17
+  #1. If you do not see the ORG "Enterprise-Europe" proceed to next step else jump and perform tasks from step#10 thru #17
 
 ## Editing GitHub Profile 
 
@@ -58,21 +58,21 @@ Tune your browser or click on the URL: [https://github.kyndryl.net/AXA-Europe](h
   
   ![Windows Command Prompt](assets/images/EditGitProfile3.png)
 
-  #5. Update the CompanyName with "Kyndryl"
+  #5. Update the CompanyName with "Enterprise"
 
   #6. Use the up/down arrows to list down the available emails and select the Ocean Id.
 
   #7. Click on button:"Save" to persist your changes and Logout from gitHub.
 
-## Notify SRE(s) to grant access to AXA Repository
+## Notify SRE(s) to grant access to Enterprise Repository
 
-  #8. Notify the SRE(s) to provide you access to the "AXA-Europe" repository.
+  #8. Notify the SRE(s) to provide you access to the "Enterprise-Europe" repository.
 
-  #9. On receiving a communication from SRE(s) about granting of access to the "AXA-Europe" repository, login by clicking on the URL: [https://github.kyndryl.net/AXA-Europe](https://github.kyndryl.net/AXA-Europe) and on sucessful authentication you should be at this landing page as shown below.
+  #9. On receiving a communication from SRE(s) about granting of access to the "Enterprise-Europe" repository, login by clicking on the URL: [https://github.enterprise.net/Enterprise-Europe](https://github.enterprise.net/Enterprise-Europe) and on sucessful authentication you should be at this landing page as shown below.
 
   ![Windows Command Prompt](assets/images/NewGitRepo.png)
   
-## Creating a Repository under AXA Organization
+## Creating a Repository under Enterprise Organization
 
   #10. Click on the Button:"New" and this bring the form to create the new repository as shown below:
 
@@ -80,7 +80,7 @@ Tune your browser or click on the URL: [https://github.kyndryl.net/AXA-Europe](h
 
   #11. Input the squad or the technology focal name for your new repository.
 
-  #12. Select the RadioButton:"Internal" to allow only authenticated Kyndryl users.
+  #12. Select the RadioButton:"Internal" to allow only authenticated Enterprise users.
 
   #13. SKIP --- Remove/Uncheck the CheckBox:"Add a README file" if already selected by default
 
@@ -103,7 +103,7 @@ Open the "Git Bash" by pressing the keyboard keys "Windows (or Windows+R) and th
 
  Type `cd` to revert to your home directory.
 
- Type `git remote add origin https://github.kyndryl.net/<Org name>/<repository name>.git` and press the "Enter".
+ Type `git remote add origin https://github.enterprise.net/<Org name>/<repository name>.git` and press the "Enter".
         
 ## Add and Commit to Git
 
@@ -111,7 +111,7 @@ Open the "Git Bash" by pressing the keyboard keys "Windows (or Windows+R) and th
 
  Type `git commit -m 'A useful message'` and press the "Enter" key to commit the files.
 
-## Previewing AXA site on local
+## Previewing Enterprise site on local
 
 MkDocs includes a live preview server, so you can preview your changes as you
 write your documentation. The server will automatically rebuild the site upon

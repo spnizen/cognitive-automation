@@ -21,7 +21,7 @@ title: Daily Reporting Overview
 
 ## 1. Hypercare Report<a name="Hypercare Report"></a>
 
-   Hypercare Report is a report for daily operations standup meeting which has the details of previous day highlights of all the teams for AXA Account.
+   Hypercare Report is a report for daily operations standup meeting which has the details of previous day highlights of all the teams for Enterprise Account.
    Most of the contents are provided by respective team’s/Squads.
    <p>Topics covered in HC report</p>
 
@@ -32,7 +32,7 @@ title: Daily Reporting Overview
    * Capacity Report
    * Cloud Infra Availability Report
    * Hotspots for each region covered by respective regional SDM
-   * On call Rota (Kyndryl and AXA).
+   * On call Rota (Enterprise and Enterprise).
    Sample of the HC report- which covers both for PiaaS and CoreIT
 ???+ "Screenshot of the report"
      ![CACF](images/hc.png)
@@ -75,7 +75,7 @@ title: Daily Reporting Overview
 
      <span style="color: blue;"><b><i>Step 6:</b></span></i>
      Required automated reports are available on share folder location as given below
-     https://kyndryl.sharepoint.com/sites/AXAReportdelivery/SitePages/ProjectHome.aspx?OR=Teams-HL&CT=1661402483534&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiIyNy8yMjA3MzEwMTAwNSIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D
+     https://enterprise.sharepoint.com/sites/EnterpriseReportdelivery/SitePages/ProjectHome.aspx?OR=Teams-HL&CT=1661402483534&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiIyNy8yMjA3MzEwMTAwNSIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D
      ![CACF](images/db1.png)
 
      <span style="color: blue;"><b><i>Step 7:</b></span></i>
@@ -119,9 +119,9 @@ title: Daily Reporting Overview
       CMDB logs will be received from automated mail every day at 3:00 PM
       ![CACF](images/he1.png)
       Download them and extract the gz files.
-      Upload IPHE02 and CMDB logs to the AXA shareBoxfolder – as given below on daily basis
+      Upload IPHE02 and CMDB logs to the Enterprise shareBoxfolder – as given below on daily basis
 
-      https://axa365.sharepoint.com/sites/AGO1/GSBX952307/Midtermshare/Forms/AllItems.aspx?ga=1&id=%2Fsites%2FAGO1%2FGSBX952307%2FMidtermshare%2FCMDB%20injector%2F19%2D8%2D2022&viewid=a5533f91%2D343a%2D4d5d%2Daf2f%2D08b797331fb3
+      https://sre365.sharepoint.com/sites/AGO1/GSBX952307/Midtermshare/Forms/AllItems.aspx?ga=1&id=%2Fsites%2FAGO1%2FGSBX952307%2FMidtermshare%2FCMDB%20injector%2F19%2D8%2D2022&viewid=a5533f91%2D343a%2D4d5d%2Daf2f%2D08b797331fb3
 
 ## 4. Datastore Report<a name="DS"></a>
 
@@ -198,10 +198,10 @@ title: Daily Reporting Overview
      This should be uploaded on BOX
      
      <span style="color: blue;"><b><i>Step 9:</b></span></i>
-     https://kyndryl.ent.box.com/folder/99039804970
+     https://enterprise.ent.box.com/folder/99039804970
 
      <span style="color: blue;"><b><i>Step 10:</b></span></i>
-     The same file should be sent to AXA on every Monday.
+     The same file should be sent to Enterprise on every Monday.
      ![CACF](images/e2e.png)
 
  
@@ -217,11 +217,11 @@ title: Daily Reporting Overview
          Working report Name - PIaaS_I2BCK_DLY_audit_logs - VM and DB View DD-Month– Update the date for which report is prepared
 
       <span style="color: blue;"><b><i>Step 2:</b></span></i>
-         Share point link for automated report:  https://kyndryl.sharepoint.com/sites/AXAReportdelivery/SitePages/ProjectHome.aspx
+         Share point link for automated report:  https://enterprise.sharepoint.com/sites/EnterpriseReportdelivery/SitePages/ProjectHome.aspx
          ![CACF](images/bck.png)
 
       <span style="color: blue;"><b><i>Step 3:</b></span></i>
-          Path to download the automated report - AXA Report delivery - AXAREPORTDELIVERY\PIAAS\REPORTS\I2BCK\OPERATIONAL
+          Path to download the automated report - Enterprise Report delivery - EnterpriseREPORTDELIVERY\PIAAS\REPORTS\I2BCK\OPERATIONAL
            
       <span style="color: blue;"><b><i>Step 4:</b></span></i>
           For NA we use N-1 report for other regions we should use same day report
@@ -358,11 +358,11 @@ title: Daily Reporting Overview
          ![CACF](images/i2b28.png)
 
       <span style="color: blue;"><b><i>Step 36:</b></span></i>
-         Once we click on Access Documents and other collaborative features. It will take you new page. Select AXA report.
+         Once we click on Access Documents and other collaborative features. It will take you new page. Select Enterprise report.
          ![CACF](images/i2b29.png)
 
       <span style="color: blue;"><b><i>Step 37:</b></span></i>
-         Select AXA I2BCK_Reports.
+         Select Enterprise I2BCK_Reports.
          ![CACF](images/i2b30.png)
 
       <span style="color: blue;"><b><i>Step 38:</b></span></i>
@@ -380,8 +380,8 @@ title: Daily Reporting Overview
       <span style="color: blue;"><b><i>Step 41:</b></span></i>
          Post upload we’ll have send email to following email id’s.
 
-      To : Suma Maraiah <Suma.Maraiah@kyndryl.com>; Kalli Reddy <Kalli.Reddy@kyndryl.com>; Parthasarathy Srinivasan <Parthasarathy.Srinivasan@kyndryl.com>; AXA_Backup <axa_backup@kyndryl.com>; Abbas Ali R Abbas.Ali.R@kyndryl.com
+      To : Suma Maraiah <Suma.Maraiah@enterprise.com>; Kalli Reddy <Kalli.Reddy@enterprise.com>; Parthasarathy Srinivasan <Parthasarathy.Srinivasan@enterprise.com>; Enterprise_Backup <sre_backup@enterprise.com>; Abbas Ali R Abbas.Ali.R@enterprise.com
 
-      CC: SUNITHA SREEJITH <Sunitha.Sreejith@kyndryl.com>; SANJU PHILIP <Sanju.Philip@kyndryl.com>; AXA-PIAAS-AccountTeam <AXA-PIAAS-AccountTeam@kyndryl.com>; AXA-SAMs AXA-SAMs@Kyndryl.com Seema Vijay Seema.Vijay@kyndryl.com .
+      CC: SUNITHA SREEJITH <Sunitha.Sreejith@enterprise.com>; SANJU PHILIP <Sanju.Philip@enterprise.com>; Enterprise-PIAAS-AccountTeam <Enterprise-PIAAS-AccountTeam@enterprise.com>; Enterprise-SAMs Enterprise-SAMs@Enterprise.com Seema Vijay Seema.Vijay@enterprise.com .
 
       ![CACF](images/i2b34.png)

@@ -4,7 +4,7 @@ title: Getting started
 ---
 
 #### 3.1	Introduction
-This document is the procedure to configure BMLS  on AXA Private Cloud project. We will only describe the initial configuration, which is put in place just after the IBM SWAT team has run the SGEN process on a brand new BMLS. 
+This document is the procedure to configure BMLS  on Enterprise Private Cloud project. We will only describe the initial configuration, which is put in place just after the IBM SWAT team has run the SGEN process on a brand new BMLS. 
 
 #### 3.2	Assumptions
 We assume that the following operations have been performed by IBM SWAT team and TSS:
@@ -73,7 +73,7 @@ Provide the following information before submitting:
  
 #### 3.6	Network configuration
 Important:
-Setting up or modifying the network configuration is an important task that can impact the solution a lot. A bad configuration can cause connectivity issues on AXA VMs, can prevent IBM solution to work properly or can cause damage on the BMLS or even on datacentre network. 
+Setting up or modifying the network configuration is an important task that can impact the solution a lot. A bad configuration can cause connectivity issues on Enterprise VMs, can prevent IBM solution to work properly or can cause damage on the BMLS or even on datacentre network. 
 The “network reconfigure” job that is executed to apply a change on these settings is not queued. If two jobs run at the same time, this may cause inconsistencies in the network configuration that would require L3 Support to fix. As a consequence, make sure that you’re the only person working on it and that there’s no “network reconfigure” job already in progress or failed.
 Open a second window and go to “System -> Job queue”, then filter on “network” and refresh regularly to make sure that there’s no “network reconfigure” job already in progress or failed.
 Double-check each parameter before saving the network configuration.
@@ -93,14 +93,14 @@ SE	Lognes	200	10.227.94.128/25
 
 Globally, we need 4 links between a BMLS and the datacentre network:
 -	One link to administer the BMLS itself. This link will be named “Rack_Mgmt”.
--	One link that will be used by the management interfaces of AXA VMs. This link will be named “AXA_Mgmt”.
--	One link that will be used by the data interfaces of AXA VMs. This link will be named “AXA_Data”.
+-	One link that will be used by the management interfaces of Enterprise VMs. This link will be named “Enterprise_Mgmt”.
+-	One link that will be used by the data interfaces of Enterprise VMs. This link will be named “Enterprise_Data”.
 -	One link that will be used for IBM infrastructure, such as PureApplication Software (PAS), TSM proxy servers, block storage replication, access to compute nodes… This link will be named “IBM_Infra”.
 Each BMLS has 2 TOR switches.
 For each link, we use at least 2 cables (one per TOR) to connect to the datacentre. Cabling is performed by IBM TSS people.
 By design, on Gen3 W3550 BMLS (if S/N starts with “8564/”), “Rack_Mgmt” link is always on port 48 of TORs. This link is the only one that is using transceivers for 1Gb SFP Copper. This link is created by SWAT team during SGEN process and should not be modified because we may lose connectivity to the BMLS administration.
 Other links are using one or several ports with 10 Gb SFP+ Fiber transceivers.
-For cabling details, go to https://ibm.ent.box.com/folder/12028314417 and, depending on the region, go to the right subdirectory and look for Excel spreadsheets called “AXA * CLOUD Urbanization *.xlsx”.
+For cabling details, go to https://ibm.ent.box.com/folder/12028314417 and, depending on the region, go to the right subdirectory and look for Excel spreadsheets called “Enterprise * CLOUD Urbanization *.xlsx”.
 
 For each link, you need to assign one or several VLAN groups.
 
@@ -126,8 +126,8 @@ MKS Console	IP Group	None	None	2105	No	No
 Block Storage Replication	IP Group	None	None	2098	No	No
 PAS Prod Management	IP Group	None	None	2106	No	No
 
-##### 3.6.4 Add VLAN groups for AXA VMs management
-If you already know which AXA OpCos will be deployed on the BMLS, take on of them. Otherwise, choose an OpCo of the same region. We may have to delete this OpCo from network configuration if it’s not required anymore. We need at least one OpCo, even if it won’t be used, in order to properly configure the BMLS. If there’s no VLAN assigned to a link, the corresponding ports on the TORs are not activated.
+##### 3.6.4 Add VLAN groups for Enterprise VMs management
+If you already know which Enterprise OpCos will be deployed on the BMLS, take on of them. Otherwise, choose an OpCo of the same region. We may have to delete this OpCo from network configuration if it’s not required anymore. We need at least one OpCo, even if it won’t be used, in order to properly configure the BMLS. If there’s no VLAN assigned to a link, the corresponding ports on the TORs are not activated.
 
 First, create the Primary PVLAN for the OpCo.
 VLAN Name	Type	Private VLAN Type	Primary Private VLAN	VLAN ID	Allow Multiple Links	Spanning Tree Enabled
@@ -141,10 +141,10 @@ VLAN Name	Type	Private VLAN Type	Primary Private VLAN	VLAN ID	Allow Multiple Lin
 yyy_MGMT_xxx	IP Group	Isolated	yyy_MGMT_xxx_PRI	mmm	No	No
 The name of the link must be “yyy_MGMT_xxx” where “xxx” is the trigram (in capital letters) of the OpCo. “yyy” is usually replaced “ATS” (regular OpCos), by “TSn” (Service zones) or “TMn” (Management zones). The Primary Private VLAN is the one you just created before for this OpCo. The VLAN ID can be provided by the IBM network team or by looking at the network configuration of another BMLS in the same region. It is usually the one used by the Primary PVLAN+1.
   
-##### 3.6.5	Add VLAN groups for AXA VMs data interface
+##### 3.6.5	Add VLAN groups for Enterprise VMs data interface
 For each OpCo, you need a VLAN group for the data interfaces. The VLAN group will be named “xxx_DATA” where “xxx” is the trigram (in capital letters) of the OpCo.
 These VLANs are not Private VLANs.
-The VLAN ID field is actually a list of VLAN IDs. This list is comma-separated and can contain ranges using “-“. For more information about the list of VLAN IDs of a given OpCo, see the BMLS Team@AXA application.
+The VLAN ID field is actually a list of VLAN IDs. This list is comma-separated and can contain ranges using “-“. For more information about the list of VLAN IDs of a given OpCo, see the BMLS Team@Enterprise application.
 VLAN Name	Type	Private VLAN Type	Primary Private VLAN	VLAN ID	Allow Multiple Links	Spanning Tree Enabled
 xxx_DATA	IP Group	None	None	nnnn	No	No
 
@@ -158,8 +158,8 @@ Create or modify the table to get the 4 links as following. Be careful, these pa
 Link name	Ports	Transceiver	Aggre-gation	Port type	VLAN name	Native VLAN	Tagged Native
 Rack_Mgmt	48	1 Gb SFP Copper	LACP	Access	Console	Calculated by BMLS	No
 IBM_Infra	27 	10 Gb SFP+ Fiber	LACP	Trunk	All VLAN groups for IBM infrastructure	Calculated by BMLS	Yes
-AXA_Mgmt	29,30 	10 Gb SFP+ Fiber	LACP	Trunk	All VLAN groups for AXA VMs management	Calculated by BMLS	Yes
-AXA_Data	25,26 	10 Gb SFP+ Fiber	LACP	Trunk	All VLAN groups for AXA VMs data interface	Calculated by BMLS	Yes
+Enterprise_Mgmt	29,30 	10 Gb SFP+ Fiber	LACP	Trunk	All VLAN groups for Enterprise VMs management	Calculated by BMLS	Yes
+Enterprise_Data	25,26 	10 Gb SFP+ Fiber	LACP	Trunk	All VLAN groups for Enterprise VMs data interface	Calculated by BMLS	Yes
 
 ##### 3.6.8 	System Management IP
 System management IP section should be already configured by SWAT team and should not be changed. In case you detect a bad value in one of the fields of this section, get in touch with SWAT team. Do not attempt to change this section without support from SWAT team.
@@ -173,7 +173,7 @@ If not yet configured by the SWAT team, set the IP addresses, VLAN ID, netmask a
 If not, this must be investigated with the network team and eventually with PureApplication Support.
  
 ##### 3.6.10 	External IP address for vCenter
-BMLS is based on VMWare vCenter which is, by default, hidden. Since firmware 2.2.3, it is possible to provide an external IP address to vCenter, making it accessible. This is also required to create Virtual Manager Cloud Groups as we do on AXA Private Cloud project. Since firmware 2.2.4, it is also possible to provide a FQDN to vCenter instead of the default “purevc” hostname.
+BMLS is based on VMWare vCenter which is, by default, hidden. Since firmware 2.2.3, it is possible to provide an external IP address to vCenter, making it accessible. This is also required to create Virtual Manager Cloud Groups as we do on Enterprise Private Cloud project. Since firmware 2.2.4, it is also possible to provide a FQDN to vCenter instead of the default “purevc” hostname.
 Providing an external IP address to vCenter for the first time does not take very long but changing this IP or changing the FQDN requires the BMLS to reinstall vCenter under the covers. This operation takes several hours and causes an outage that prevents any deployment or operation on existing VMs. Moreover, some minor issues have been seen in the past during this operation.
 As a consequence, this operation is usually performed by SWAT team while setting up the BMLS for the first time. Do not change these values.
 To check the settings, go to “System -> Network configuration” and expand the “Virtual Manager external IP address” section.
@@ -183,7 +183,7 @@ The “Configure IPv4 addresses” must be checked and the “Virtual Manager FQ
 #### 3.7    System Settings
 Go to “System -> System Settings”
 8.1	Mail Delivery
-SMTP Server: smtp.cloudfabric.intraxa
+SMTP Server: smtp.cloudfabric.intrsre
 Reply-to address: imi_cloud_support@wwpdl.vnet.ibm.com
  
 ##### 3.7.1 	Date and Time
@@ -212,25 +212,25 @@ Then, click on the “Create Trap Destination”.
 You have to create 6 trap destinations. These will use the 2 ITM Relay of the region (one ITM relay in each datacentre). There are 3 communities, one per severity between “Warning”, “Critical” and “Fatal”. Port number is always 162 and SNMP version is “2c”. Use the following table to create the trap destinations.
 Region	IP addresses for ITM relays	Communities
 AS	10.99.132.135
-10.99.132.136	axa_fatal
-axa_crit
-axa_warn
+10.99.132.136	sre_fatal
+sre_crit
+sre_warn
 ME	10.99.5.135
-10.99.5.136	axa_fatal
-axa_crit
-axa_warn
+10.99.5.136	sre_fatal
+sre_crit
+sre_warn
 NA	10.68.124.135
-10.68.124.136	axa_fatal
-axa_crit
-axa_warn
+10.68.124.136	sre_fatal
+sre_crit
+sre_warn
 NE	10.241.183.137
 10.241.183.138	NE_Fatal
 NE_Crit
 NE_Warn
 SE	10.227.89.135
-10.227.89.136	axa_fatal
-axa_crit
-axa_warn
+10.227.89.136	sre_fatal
+sre_crit
+sre_warn
 
  
  
@@ -386,9 +386,9 @@ We need to create a local account on both BMLS to replicate storage one to the o
 On each BMLS of the pair, go to “System -> Users” and create a new account with the following information:
 •	User name: replication
 •	Full name: replication
-•	Email address: replication@cloudfabric.intraxa
+•	Email address: replication@cloudfabric.intrsre
 •	Account type: Local
-•	Password: IBM4axaReplic@tion
+•	Password: IBM4sreReplic@tion
  
 Give this user the following permissions:
 •	Manage block storage replication profiles (full permission)
@@ -400,7 +400,7 @@ Go to “System -> Block Storage replication” and click on the “+” icon. A
 Select “IP based replication”.
 Set name as “<Current BMLS name> to <the other BMLS>”
 Peer management location is the IP address of other BMLS.
-Trust user ID is “replication” and its password is “IBM4axaReplic@tion”.
+Trust user ID is “replication” and its password is “IBM4sreReplic@tion”.
  
 Click OK.
 You should get a message saying “Block storage replication profile with peer management location xx.xxx.xxx.xxx has been successfully created.”
@@ -441,18 +441,18 @@ Go to « System -> System Settings » and expand the « External Application Acc
 The following accesses need to be created:
 Name	Access scope	Virtual Manager Privilege Set	Grant CN access	Grant Storage Access
 ICO user for backup	Everything	Default	yes	yes
-AXA Flexera	Everything	Read Only	no	no
+Enterprise Flexera	Everything	Read Only	no	no
 IBM SP4VE Backup User	Everything	IBM Spectrum Protect Data Mover - Backup Role	no	no
 IBM SP4VE Recovery User	Everything	IBM Spectrum Protect Data Mover - Backup and Recovery Role	no	no
-AXA SP4VE Recovery User	Everything	IBM Spectrum Protect Data Mover - Backup and Recovery Role	no	no
+Enterprise SP4VE Recovery User	Everything	IBM Spectrum Protect Data Mover - Backup and Recovery Role	no	no
 
 Once done, connect to vCenter using the credentials for “ICO user for backup” and check that all the compute nodes are shown with their IPv4 address, not and IPv6. If a compute node is shown in vCenter with its IPv6, go to the MKS Console IP Group on the BMLS, detach the compute node, wait for the job to complete, then attach the compute node to its IPv4 address, check the job status. If, once job completed successfully, the compute node is still seen with its IPv6 in vCenter, you’ll need to get this fixed by SWAT team or IBM Support.
 
 ##### 3.13.2	Additional steps for Flexera
-Once the credentials for “AXA Flexera” are generated:
+Once the credentials for “Enterprise Flexera” are generated:
 
-1.	Create a Service Request for IBM network team to allow communication from Flexera to the new BMLS vCenter. The communication must be allowed for AXA Flexera servers to access the vCenter IPv4 using ICMP and TCP on port 443 (HTTPS)
+1.	Create a Service Request for IBM network team to allow communication from Flexera to the new BMLS vCenter. The communication must be allowed for Enterprise Flexera servers to access the vCenter IPv4 using ICMP and TCP on port 443 (HTTPS)
 
-2.	Contact AXA firewall team (through distribution list) and get the communication allowed from Flexera to new vCenter.
+2.	Contact Enterprise firewall team (through distribution list) and get the communication allowed from Flexera to new vCenter.
 
 =================================================================

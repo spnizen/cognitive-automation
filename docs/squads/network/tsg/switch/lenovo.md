@@ -11,7 +11,7 @@ Description:
 When a node or device is down or unreachable via remote monitoring
 
 Sample Incident:                                             
-[ seclg8272t1 2/17/2020 3:07 PM City = $ NodeName=SECLG8272T1.cloudfabric.intraxa IP 172.16.153.5. Alert Node is Down and not reachable Severity=5 Attention commas replaced by dots. ]
+[ seclg8272t1 2/17/2020 3:07 PM City = $ NodeName=SECLG8272T1.cloudfabric.intrsre IP 172.16.153.5. Alert Node is Down and not reachable Severity=5 Attention commas replaced by dots. ]
 
 Steps to follow:
 
@@ -32,7 +32,7 @@ Description:
 When an active Interface goes DOWN and the uplink/downlink connection breaks.
 
 Sample Incident:                                             
-[ seclg827201 9/11/2019 9:24 PM Interface Port-Channel79 for NodeName=SECLG827201.cloudfabric.intraxa IP 172.16.153.1, interface status is Unknown Severity=3 ]
+[ seclg827201 9/11/2019 9:24 PM Interface Port-Channel79 for NodeName=SECLG827201.cloudfabric.intrsre IP 172.16.153.1, interface status is Unknown Severity=3 ]
 
 Steps to follow:
 
@@ -100,7 +100,7 @@ Description:
 
 Sample Incident:                                             
 
-[ 6/20/2022 4:38 AM City = NodeName=SELOG827202.cloudfabric.intraxa IP 172.16.153.4 Interface Ethernet25 ? LO_LEAF2 int e1/27 (CISCO VPC PVLAN_SWITCH / LACP KEY 300) has a Transmitted utilization of 88 which is greater than the threshold of 80% Severity=4  ]  
+[ 6/20/2022 4:38 AM City = NodeName=SELOG827202.cloudfabric.intrsre IP 172.16.153.4 Interface Ethernet25 ? LO_LEAF2 int e1/27 (CISCO VPC PVLAN_SWITCH / LACP KEY 300) has a Transmitted utilization of 88 which is greater than the threshold of 80% Severity=4  ]  
 [Tx utilization]
 
 
@@ -125,7 +125,7 @@ Description:
 Whenever a node reboots, it generates an alert which needs to be verified manually to ascertain whether the event was part of a planned activity or an unplanned activity.
 
 Sample incident:                                             
-[ seclg8272t2 1/14/2020 2:05 PM City = $ NodeName=SECLG8272T2.cloudfabric.intraxa IP ${N=SwisEntity;M=Node.IP_Address}, Alert Node reboot Severity=3 ]
+[ seclg8272t2 1/14/2020 2:05 PM City = $ NodeName=SECLG8272T2.cloudfabric.intrsre IP ${N=SwisEntity;M=Node.IP_Address}, Alert Node reboot Severity=3 ]
 
 
 Steps to follow:

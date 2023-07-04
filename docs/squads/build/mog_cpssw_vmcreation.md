@@ -47,8 +47,8 @@ Some steps of this procedure require access to 3M tooling (Meta Model Manager).
 ##### 4.3.1 Create VMCG in the BMLS
 Connect to the BMLS for the datacenter the PAS is related to:
 
-   ![AXA Environment](../assets/images/AXAEnv.png)
-   ![AXA Environment](../assets/images/3mtool1.png)
+   ![Enterprise Environment](../assets/images/EnterpriseEnv.png)
+   ![Enterprise Environment](../assets/images/3mtool1.png)
 
 Use a login ID with administrator privileges
 
@@ -482,7 +482,7 @@ For the PAS Image in V2301 we are going to use command line tool to create the P
 below steps carefully.
 Login to RTEM and run the following commands
 Refer 2.4 Chapter to get the RTEM IP. Details.
-For example, login to 10.227.89.135 using your AD ID (e.g. myname@cloudfabric.intraxa) 
+For example, login to 10.227.89.135 using your AD ID (e.g. myname@cloudfabric.intrsre) 
 and then
 
 a) Run “pwsh”
@@ -696,11 +696,11 @@ two following groups.
 - BMLS-PureApp-SuperAdminNE
 - BMLS-PureApp-AdministratorsNE
 
-##### 4.3.12 AXA Userids
-Depending on type of PAS (PréProduction vs Production) and Regions, some AXA userids must 
+##### 4.3.12 Enterprise Userids
+Depending on type of PAS (PréProduction vs Production) and Regions, some Enterprise userids must 
 be defined, with specific authorizations.
 
-- Authorizations for all AXA userids
+- Authorizations for all Enterprise userids
 - On all environments
 - On all PreProduction environments
 - On AS Production environments
@@ -732,7 +732,7 @@ writing any single command.
 To use 3M, connect to 3M tooling at http://10.227.94.138 and select “Fix CPU Ratio on PAS” in 
 the Applications menu.
 
-Expand the AXA Cloud to find your PAS. Click on the PAS. The tool will gather the information 
+Expand the Enterprise Cloud to find your PAS. Click on the PAS. The tool will gather the information 
 from the PAS and list the VMCG.
 Select you VMCG.
 
@@ -799,11 +799,11 @@ Once created, click on the name of the volume.
 image
 
 Copy the datastore name, datastore UUID and LUN identifier.
-You need to provide this information to project management for them to send to AXA OpenPaaS 
+You need to provide this information to project management for them to send to Enterprise OpenPaaS 
 team.
 **Important point: do NOT set the “Associate System” field. Leave it empty on purpose.**
 Because the “associate system” field is empty, PAS will not discover it and will not deploy any 
-VM on it, letting AXA populate this datastore at their convenience.
+VM on it, letting Enterprise populate this datastore at their convenience.
 
 **- Additional vCenter credentials**
 On BMLS, go to System / System Settings and expand the “External Application Access Settings” 
@@ -822,14 +822,14 @@ image
 Click OK.
 Once the credentials are created, click the details icon in the Actions column. Then click the “Show 
 passwords”.
-You need to provide the credentials to to project management for them to send to AXA OpenPaaS 
+You need to provide the credentials to to project management for them to send to Enterprise OpenPaaS 
 team
 
 image
 
-**- Add AXA DNS to PAS System Settings**
+**- Add Enterprise DNS to PAS System Settings**
 On PAS, go to System / System Settings and expand section “Domain Name Service (DNS)”
-In addition to the 2 IBM DNS (10.227.89.134 and 10.241.183.130), add 2 AXA DNS for ME:
+In addition to the 2 IBM DNS (10.227.89.134 and 10.241.183.130), add 2 Enterprise DNS for ME:
 • 10.99.124.6
 • 10.99.124.7
 You should get the following list:
@@ -846,11 +846,11 @@ cloud resources (Full permission)” as follows:
 image
 
 **- Allow the Open PaaS VAs to communicate to the vCenter on opposite site**
-Assign a SR for network team to update AXA_TO_IBM ACL in ME region OOB switches.
+Assign a SR for network team to update Enterprise_TO_IBM ACL in ME region OOB switches.
 Traffic from the management interface of VA to be allowed towards other DC vCenter (If the VA 
 is in ME PA, traffic to be allowed toward ME BA vCenter and vise versa).
 Share the newly build VA IPs and vCenter IPs with network team upon completion of the build.
-Any action may not be required if AXA_TO_IBM ACL is already allowing the traffic. Network 
+Any action may not be required if Enterprise_TO_IBM ACL is already allowing the traffic. Network 
 team should provide the evidence of existing ACL entry before resolving the SR.
 
 ##### 4.3.15 Update admin & root passwords
@@ -908,10 +908,10 @@ Ensure the following users exists:
 • ICO_BMLS_CTU
 • KPI_BMLS_USER
 • JMP_PAS_PDT
-• Several AXA users (see sections 2.11.x)
+• Several Enterprise users (see sections 2.11.x)
 
-Finally, register the PAS creation as an event in the BMLS Tool @ AXA. 
-For this go to the ‘BMLS Tool @ Axa’ : http://10.227.94.138/html/index.html
+Finally, register the PAS creation as an event in the BMLS Tool @ Enterprise. 
+For this go to the ‘BMLS Tool @ sre’ : http://10.227.94.138/html/index.html
 On the navigation bar, go to Event log > Register a new Events:
 
 image
@@ -921,9 +921,9 @@ Select the PAS and Submit.
 ##### 4.3.17 Mail to Security teams
 
 Last action is to contact the CyberArk and Linux teams to hand over the PAS root account.
-For that, create a copy of Excel file named “CyberArk configuration - tempate_AXA-PUAMTemplateforOnboarding_Accounts.xlsx” then send this Excel file to 
+For that, create a copy of Excel file named “CyberArk configuration - tempate_Enterprise-PUAMTemplateforOnboarding_Accounts.xlsx” then send this Excel file to 
 
-axa_linux@wwpdl.vnet.ibm.com and axa-puam@wwpdl.vnet.ibm.com asking them to define OS 
+sre_linux@wwpdl.vnet.ibm.com and sre-puam@wwpdl.vnet.ibm.com asking them to define OS 
 Security IDs then to manage on CyberArk.
 
 ##### 4.3.18 Environment Profile, IP Groups and Catalog Content
@@ -991,7 +991,7 @@ By default, the table is filtered on the current user ID.
 Using the magnifier icon on the Actions column, you can retrieve the job console. The trash icon 
 is used to delete the job execution result from the database
 
-From BMLS Team @ AXA Tooling, menu “AXA Environments”, select “Tools”:
+From BMLS Team @ Enterprise Tooling, menu “Enterprise Environments”, select “Tools”:
 
 image
 image 
@@ -1003,8 +1003,8 @@ See KT document named “MassLoad IPGroups on Production VMCGs - v1.0.pdf”.
 - Additional actions for OpenPaaS
 
 For OpenPaaS, you need to prepopulate the IP Groups with all the IP addresses that are potentially 
-usable by AXA. These IP Groups contain “OPAA” in their name.
-Make sure the AXA DNS are already configured in the PAS System Settings (see section 4.3.14 for "Add AXA DNS to PAS System Settings")
+usable by Enterprise. These IP Groups contain “OPAA” in their name.
+Make sure the Enterprise DNS are already configured in the PAS System Settings (see section 4.3.14 for "Add Enterprise DNS to PAS System Settings")
 
 For each of them, in Cloud / IP Groups, section “IP addresses”, assuming this section is empty:
 1. Write down the subnet address and the gateway of the IP Group

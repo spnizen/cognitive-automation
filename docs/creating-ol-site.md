@@ -2,7 +2,7 @@
 template: overrides/main.html
 ---
 
-# Signing into the Kyndryl GitHub site
+# Signing into the Enterprise GitHub site
 
 After you've [installed] all the prerequisites you can now create or use your existing GitHub Organization and Github Repository for publishing the documentation online over the internet using the `mkdocs gh-deploy` executable. 
 
@@ -83,7 +83,7 @@ or your private web space.
 If you're already hosting your code on GitHub, [GitHub Pages] is certainly
 the most convenient way to publish your project documentation. It's pretty easy to set up.
 
-  [GitHub Pages]: https://pages.github.kyndryl.net/
+  [GitHub Pages]: https://pages.github.enterprise.net/
 
 ### with GitHub Actions
 
@@ -184,19 +184,19 @@ mkdocs gh-deploy --force
 
 ### Git Remote Add
 
- Type `git remote add origin https://github.kyndryl.net/<Org name>/<repository name>.git` and press the "Enter" key to add remote repository which is different than your repository.
+ Type `git remote add origin https://github.enterprise.net/<Org name>/<repository name>.git` and press the "Enter" key to add remote repository which is different than your repository.
 
  Type `git remote -v` and press the "Enter" key to verify the remote repository and this will display:
 
 ```
-origin  https://github.kyndryl.net/<Org name>/<repository name>.git (fetch)
-origin  https://github.kyndryl.net/<Org name>/<repository name>.git (push)
+origin  https://github.enterprise.net/<Org name>/<repository name>.git (fetch)
+origin  https://github.enterprise.net/<Org name>/<repository name>.git (push)
 ```
 
 ### Git Fetch
 
-Type `git fetch https://github.kyndryl.net/<Org name>/<repository name>.git` and press the "Enter" key and this will display the message as shown below:
+Type `git fetch https://github.enterprise.net/<Org name>/<repository name>.git` and press the "Enter" key and this will display the message as shown below:
 ``` 
-From https://github.kyndryl.net/<Org name>/<repository name>
+From https://github.enterprise.net/<Org name>/<repository name>
  * branch            HEAD       -> FETCH_HEAD
 ```

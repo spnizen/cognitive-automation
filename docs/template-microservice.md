@@ -48,7 +48,7 @@ Copy and append the below code in the "health.py" python file open in Visual Cod
 @app.route("/profile")
 def GetProfile():
     """Profile route"""
-    profile = {"Name": "Sridhar P Naidu", "Email Id": "sridhar.naidu@kyndryl.com", "Address": "Where I lay my head is my home"}
+    profile = {"Name": "Sridhar P Naidu", "Email Id": "sridhar.naidu@enterprise.com", "Address": "Where I lay my head is my home"}
     return jsonify(profile)
 
 ```
@@ -84,7 +84,7 @@ from requests.auth import HTTPBasicAuth
 # getting inputs from Github Profile and Security
 github_username  = "srpagada"
 basic_auth = HTTPBasicAuth('srpagada', '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')
-api_url = "https://github.kyndryl.net/api/v3/repos/sre-axa/steady-state-tasks/issues"
+api_url = "https://github.enterprise.net/api/v3/repos/sre-sre/steady-state-tasks/issues"
 
 @app.route('/createIssue', methods =["POST"])
 def createIssue():
@@ -121,7 +121,7 @@ def createIssue():
 github_username  = "<replace with your git username>"
 basic_auth = HTTPBasicAuth(github_username, 'replace with your Personal Access Token')
 
-api_url = "https://github.kyndryl.net/api/v3/repos/AXA-Europe/<replace with your git repo name>/issues"
+api_url = "https://github.enterprise.net/api/v3/repos/Enterprise-Europe/<replace with your git repo name>/issues"
 ```
 
 when done please save the file by pressing the keys `Ctrl + s`.
@@ -202,7 +202,7 @@ If you see the 404 then you are on the right path. To successfully execute your 
 
 **Note**: The Organization and the Repository will be different and also the issue number will be running increment.
 
-Click on the URL and this will navigate you to the Kyndryl Guthub Site displaying the Issue as shown below:
+Click on the URL and this will navigate you to the Enterprise Guthub Site displaying the Issue as shown below:
 
   ![IBM Cloud Register](assets/images/BrowserResponse-Viewing-Issue-Github.png)
 

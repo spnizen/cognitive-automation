@@ -28,7 +28,7 @@ title: Getting started
 
   Why git and GitHub?
 
-  * Part of Kyndryl toolbox strategy
+  * Part of Enterprise toolbox strategy
   * Most adopted and known source versioning control tool
   * Check how big is GitHub today in this Octoverse <a href="https://octoverse.github.com/" target="_blank">report</a>
     * 140M+ Users
@@ -65,7 +65,7 @@ title: Getting started
 
 1. Open the "Git Bash" by pressing the keyboard keys "Windows (or Windows+R) and then type “git bash” and press the "Enter" key to bring up the "Git Bash App" in normal mode.
 
-2. Type "ssh-keygen -t ed25519 -C "your_kyndryl_email@kyndryl.com" at the bash prompt and press the "Enter" key. 
+2. Type "ssh-keygen -t ed25519 -C "your_enterprise_email@enterprise.com" at the bash prompt and press the "Enter" key. 
 
 3. The message: "Generating public/private ed25519 key pair." should be displayed along with a prompt "Enter file in which to save the key (/c/Users/<YourDirectory>/.ssh/id_ed25519):" awaiting for the user input.
 
@@ -85,7 +85,7 @@ title: Getting started
   Your public key has been saved in /c/Users//<YourDirectory>/.ssh/id_ed25519.pub
 
   !!! The key fingerprint is:
-      SHA256:ua4nXcJYfnrHt1/yHNICTObTpUK0M6GBSUw6PhAgBL0 sridhar.naidu@kyndryl.com
+      SHA256:ua4nXcJYfnrHt1/yHNICTObTpUK0M6GBSUw6PhAgBL0 sridhar.naidu@enterprise.com
 
       *The key's randomart image is:
                 +--[ED25519 256]--+

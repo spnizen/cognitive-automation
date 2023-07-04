@@ -11,7 +11,7 @@ Description:
 When a node or device is down or unreachable via remote monitoring
 
 Sample Incident:                                             
-[ 7/25/2022 12:45 AM NodeName=SECLF5240001.cloudfabric.intraxa IP 172.16.154.13 SNMP not responding alert was triggered. please validate the SNMP. the device might be up but SNMP is having issues.. Alert SNMP Not Responding Severity=4 Attention commas replaced by dots ]
+[ 7/25/2022 12:45 AM NodeName=SECLF5240001.cloudfabric.intrsre IP 172.16.154.13 SNMP not responding alert was triggered. please validate the SNMP. the device might be up but SNMP is having issues.. Alert SNMP Not Responding Severity=4 Attention commas replaced by dots ]
 
 Steps to follow:
 
@@ -90,7 +90,7 @@ Checking Last Reboot time of F5 LB:
 ### 1.5 VIP manual modification request 
 
 Description:                                                  
-Due to either an unsupported feature or any other technical reasons related to BAW/AXALIS portal or AXALIS database, an end-user may sometimes raise a Service-Request for manual creation/deletion/modification of configuration of an existing or new VIP on F5 LB.  
+Due to either an unsupported feature or any other technical reasons related to BAW/EnterpriseLIS portal or EnterpriseLIS database, an end-user may sometimes raise a Service-Request for manual creation/deletion/modification of configuration of an existing or new VIP on F5 LB.  
 
 Sample Request:                                              
 network - modify health check on  VIP : CAG0106C
@@ -98,7 +98,7 @@ network - modify health check on  VIP : CAG0106C
 
 Steps to follow:
 
-If a service request is received from AXA user, please follow below steps to make an initial analysis of the request parameters before proceeding for change implementation..
+If a service request is received from Enterprise user, please follow below steps to make an initial analysis of the request parameters before proceeding for change implementation..
 
 1. Validate user request template for must-have details, e.g. requester name/email, source/destination IP address, service port number.. if anything missing, revert back to the requester asking for missing details.
 2. Upon successful validation of the manual configuration request in above step, then proceed to assess and prepare a change plan based on request template.
@@ -106,9 +106,9 @@ If a service request is received from AXA user, please follow below steps to mak
 4. After successful completion of the change request, send out appropriate communication to the change requester.
 
 [ IMPORTANT NOTE ]                                           
-All manual configuration requests related to VIP  modification, must be raised as Service Request(SR), instead as an Incident(IN) and if a manual configuration request received as an Incident(IN), please update the below statement in the ticket and transfer the ticket back to AXA queue in Service Now.
+All manual configuration requests related to VIP  modification, must be raised as Service Request(SR), instead as an Incident(IN) and if a manual configuration request received as an Incident(IN), please update the below statement in the ticket and transfer the ticket back to Enterprise queue in Service Now.
 
-“ For any LB manual configurations requests, please use 'Private IaaS -Load Balance Rules' product in AXA Silva. These requests will not be handled under Incidents any more. 
+“ For any LB manual configurations requests, please use 'Private IaaS -Load Balance Rules' product in Enterprise Silva. These requests will not be handled under Incidents any more. 
 Please reach out to regional SDMs or cloud brokers for support”
 
 
@@ -119,7 +119,7 @@ When a power-supply module or Fan tray goes down. When current operating tempera
 
 
 Sample Incident:                                             
-[ seclf5240001 4/18/2018 5:19 AM City = $${N=SwisEntity;M=CustomProperties.City} NodeName=SECLF5240001.cloudfabric.intraxa IP ${N=SwisEntity;M=Node.IP_Address}, Hardware Alert Power Supply 1 on SECLF5240001.cloudfabric.intraxa is Critical Severity=3 ]
+[ seclf5240001 4/18/2018 5:19 AM City = $${N=SwisEntity;M=CustomProperties.City} NodeName=SECLF5240001.cloudfabric.intrsre IP ${N=SwisEntity;M=Node.IP_Address}, Hardware Alert Power Supply 1 on SECLF5240001.cloudfabric.intrsre is Critical Severity=3 ]
 
 Steps to follow:
 

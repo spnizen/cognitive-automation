@@ -2,14 +2,14 @@
 template: overrides/main.html
 title: IM Overview
 ---
-#   <b>AXA Incident Management</b>
+#   <b>Enterprise Incident Management</b>
 ##  Incident Management Overview
-   AXA impacted MI process
+   Enterprise impacted MI process
 
    1	Incident Management
 
-   This section of the AXA / Kyndryl Process Interface Manual provides customer interfaces for requesting and obtaining in-scope services pursuant to the Master Services Agreement with Kyndryl. Nothing contained in this document is intended to amend the terms and conditions of the Agreement, and in the event of a conflict, the Agreement takes precedence.
-   This document is intended to be used by both AXA and IBM personnel responsible for providing the required services.
+   This section of the Enterprise / Enterprise Process Interface Manual provides customer interfaces for requesting and obtaining in-scope services pursuant to the Master Services Agreement with Enterprise. Nothing contained in this document is intended to amend the terms and conditions of the Agreement, and in the event of a conflict, the Agreement takes precedence.
+   This document is intended to be used by both Enterprise and IBM personnel responsible for providing the required services.
 
    1.1	Description
 
@@ -55,9 +55,9 @@ The Service Availability manager / Duty Manager role is responsible for managing
     - Managing and owning the Major Incident through service recovery
     - Reviewing classification of the Incident as a Major Incident
     - Determining and handling the scope of the Major Incident
-    - Provide updates to AXA during Major Incident lifecycle
+    - Provide updates to Enterprise during Major Incident lifecycle
     - Facilitate and lead information exchange between various resolver teams involved in Service Restoration
-    - Working collaboratively with AXA convening and leading the required resources to support Resolution of the Major Incident
+    - Working collaboratively with Enterprise convening and leading the required resources to support Resolution of the Major Incident
     - Prompt notification upon detection of Major Incident
     - Driving, assessing and handling the recovery plan
     - Assembling a team of resolver groups (other levels of support and across platforms as required) within the allowable time when additional support is required
@@ -70,9 +70,9 @@ The Service Availability manager / Duty Manager role is responsible for managing
     -	Participating in Major Incident reviews
     - Prompt Notification upon detection of Major Incident)
     - Obtaining regular updates regarding the status of resolution.
-    - Provide updates to AXA during Major Incident lifecycle
+    - Provide updates to Enterprise during Major Incident lifecycle
     - Facilitate and lead information exchange between various resolver teams involved in Service Restoration.
-    - Working collaboratively with AXA convening and leading the required resources to support Resolution of the Major Incident.
+    - Working collaboratively with Enterprise convening and leading the required resources to support Resolution of the Major Incident.
 
 ## MI Process flow
   
@@ -82,12 +82,12 @@ The Service Availability manager / Duty Manager role is responsible for managing
     T([Monitoring Alerts]) & S([From Silva]) ==> id;
     id[(SNOW tool)] ==>
     A[Command Center Queue] ==> B[Acknowledged by Command Center] 
-    ==> D[CC to warm transfer to resolver teams & Inform SAM/SDM] ==> E{AXA impacted?};
+    ==> D[CC to warm transfer to resolver teams & Inform SAM/SDM] ==> E{Enterprise impacted?};
     E ==>|Yes| E1[SAM Process established & Bridge the incident to SILVA];
-    E1 ==> F[Call Global AXA MIM & Start the communication]
+    E1 ==> F[Call Global Enterprise MIM & Start the communication]
     ==> F1[Technical team to work and restore the service]
     ==> F2[Service restored, monitoring] 
-    ==> F3[Close the incident with approval from AXA]
+    ==> F3[Close the incident with approval from Enterprise]
     E ==>|No| E2[Assign the ticket to respective resolver groups for investigation] 
     ==> G[Resolver group works and closes the ticket]
 ```

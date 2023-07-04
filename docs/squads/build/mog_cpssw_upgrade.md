@@ -11,7 +11,7 @@ Upgrading CPS SW from v2.3.2.0 to 2.3.3.3 is not possible through the regular ma
 But CPS SW 2.3.3.3 is a major step for several reasons.
 
 •	It is now running on RHEL 7, which will solve some security and support issues(RHEL6 is very old).
-•	It brings support for VM Mobility which is a major feature for the AXA Private IaaS that is waited for many years.
+•	It brings support for VM Mobility which is a major feature for the Enterprise Private IaaS that is waited for many years.
 
 #### 2.2	Prerequisites
 
@@ -97,7 +97,7 @@ Except for SECL :
 Login to RTEM and run the following commands
 
 Refer to the table RTEM_table to get the RTEM IP. 
-For example, login to 10.227.89.135 using your AD ID (e.g. myname@cloudfabric.intraxa) and then
+For example, login to 10.227.89.135 using your AD ID (e.g. myname@cloudfabric.intrsre) and then
 
 1.Run “pwsh”
 
@@ -243,7 +243,7 @@ Go to “System -> System Settings”.
 ![Menu System Settings1](../assets/images/SystemSettings1.png)
 
 
-On the Cloud Management IP section, enter the PAS IP Address; PAS name, set cloudfabric.intraxa as the domain name, netmask and Default
+On the Cloud Management IP section, enter the PAS IP Address; PAS name, set cloudfabric.intrsre as the domain name, netmask and Default
 
 Gateway. Leave the default value for the VLANS list.
 
@@ -618,9 +618,9 @@ Note: Please are the list of patches to run after Migration CCPS2320 to CPS2333
 
 21.	Now navigate to CloudPak menu -> Security and Access -> Usergroups
 
-Now select BMLS-PureApp-AxaDevUsers and select the permission as shown in the oval circle
+Now select BMLS-PureApp-sreDevUsers and select the permission as shown in the oval circle
 
-![BMLS-PureApp-AxaDevUsers](../assets/images/BMLS-PureApp-AxaDevUsers.png)
+![BMLS-PureApp-sreDevUsers](../assets/images/BMLS-PureApp-sreDevUsers.png)
 
 22.	Reboot the CPSSW VM using shutdown -r now
 

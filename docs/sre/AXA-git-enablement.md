@@ -1,8 +1,8 @@
-# SRE Docs for the AXA Organization
+# SRE Docs for the Enterprise Organization
 
 ## Why git and GitHub?
 
-* Part of Kyndryl toolbox strategy
+* Part of Enterprise toolbox strategy
 * Most adopted and known source versioning control tool
 * Check how big is GitHub today in this Octoverse <a href="https://octoverse.github.com/" target="_blank">report</a>
   * 140M+ Users
@@ -28,7 +28,7 @@ Source: [Git vs. GitHub: What is the difference between them?](https://www.these
 
 ## git + GitHub
 
-![git-github-arch](../images/AXA-sre-enablement-git.png)
+![git-github-arch](../images/Enterprise-sre-enablement-git.png)
 
 ## git Installation
 
@@ -44,7 +44,7 @@ Source: [Git vs. GitHub: What is the difference between them?](https://www.these
 ## git Usage
 
 * We have some docs in our knowledge base.
-  * SRE Technical Guides [microsite](https://pages.github.kyndryl.net/kyndryl-SRE/doc-tech-blog/git/local-git/)
+  * SRE Technical Guides [microsite](https://pages.github.enterprise.net/enterprise-SRE/doc-tech-blog/git/local-git/)
 
 ## Crash Course
 
@@ -54,7 +54,7 @@ Source: [Git vs. GitHub: What is the difference between them?](https://www.these
 ## Next steps
 
 * Udemy course: `GitHub Ultimate: Master Git and GitHub - Beginner to Expert`
-  * [Link](https://kyndryl.udemy.com/course/github-ultimate/)
+  * [Link](https://enterprise.udemy.com/course/github-ultimate/)
 
 * OReilly Live Event: `Git Fundamentals` April 13-14
   * [Link](https://www.oreilly.com/live-events/git-fundamentals/0636920092223/0636920071673/)

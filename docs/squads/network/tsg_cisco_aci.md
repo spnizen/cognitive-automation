@@ -36,7 +36,7 @@ Description:
 When an active Interface goes DOWN and the uplink/downlink connection breaks.
 
 Sample Incident:                                             
-[ atkenx937202 6/14/2018 4:55 PM Interface Ethernet1/29 for  NodeName=ATKENX937202.cloudfabric.intraxa IP 172.16.154.214, interface status is Down Severity=5 ]
+[ atkenx937202 6/14/2018 4:55 PM Interface Ethernet1/29 for  NodeName=ATKENX937202.cloudfabric.intrsre IP 172.16.154.214, interface status is Down Severity=5 ]
 
 Steps to follow:
 
@@ -58,7 +58,7 @@ Description:
 When the average CPU usage increases beyond its accepted threshold level : 70% warning level and 85% critial level
 
 Sample Incident:                                             
-[ seloc2960x01 7/6/2018 12:22 AM City = $ NodeName= SELOC2960X01.cloudfabric.intraxa IP 172.16.154.60 CPU Load :75 % , Alert High CPU Severity=4 ]
+[ seloc2960x01 7/6/2018 12:22 AM City = $ NodeName= SELOC2960X01.cloudfabric.intrsre IP 172.16.154.60 CPU Load :75 % , Alert High CPU Severity=4 ]
 
 Steps to follow:
 
@@ -81,7 +81,7 @@ Description:
 When the average Memory usage increases beyond its accepted threshold level : 70% warning level and 85% critial level
 
 Sample Incident:                                             
-[ seclapicm201 $ {DateTime} 172.16.144.129 NodeName=SECLAPICM201.cloudfabric.intraxa IPaddress 172.16.144.129 memory used is 21 MB Severity=5 seclapicm201 Friday, May 12, 2017 12:17 PM 172.16.144.129 NodeName=SECLAPICM201.cloudfabric.intrax a IPaddress 172.16.144.129 memory used
+[ seclapicm201 $ {DateTime} 172.16.144.129 NodeName=SECLAPICM201.cloudfabric.intrsre IPaddress 172.16.144.129 memory used is 21 MB Severity=5 seclapicm201 Friday, May 12, 2017 12:17 PM 172.16.144.129 NodeName=SECLAPICM201.cloudfabric.intrax a IPaddress 172.16.144.129 memory used
 is 21 MB Severity=4 ]
 
 
@@ -108,12 +108,12 @@ Description:
 [Type-2] When the average Tx utilization on an Interface increases beyond its accepted threshold level : 70% Warning level and 85% Critical level
 
 Sample Incident:                                             
-[ seclnx937204 11/23/2017 5:58 PM City =$${N=SwisEntity;M=CustomProperties.City} NodeName=SECLNX937204.cloudfabric.intraxa IP 172.16.154.9 Interface Ethernet1/7 has a received utilization of 92,Alert High Interface Utilization Severity=5  ] [Rx utilization]
+[ seclnx937204 11/23/2017 5:58 PM City =$${N=SwisEntity;M=CustomProperties.City} NodeName=SECLNX937204.cloudfabric.intrsre IP 172.16.154.9 Interface Ethernet1/7 has a received utilization of 92,Alert High Interface Utilization Severity=5  ] [Rx utilization]
 
 [ nekoc2960x01 4/19/2018 6:06 AM City =$${N=SwisEntity;M=CustomProperties.City} NodeName=NEKOC2960X01.cloud.ibm.com IP172.16.154.132 Interface GigabitEthernet1/0/24 ? UCS C240-M4 #1(TSM) has a transmitted utilization of 75 %,Alert High Interface UtilizationSeverity=4  ]  
 [Tx utilization]
 
-[ selonx937203 7/26/2018 11:28 AM City = $${N=SwisEntity;M=CustomProperties.City} NodeName=SELONX937203.cloudfabric.intraxa IP ${IP_Address} Interface Ethernet1/7 for node SELONX937203.cloudfabric.intraxa IP 172.16.154.38 has a transmitted utilization of 92 which is greater than the threshold of 85% Severity=5 ]   [Tx utilization]
+[ selonx937203 7/26/2018 11:28 AM City = $${N=SwisEntity;M=CustomProperties.City} NodeName=SELONX937203.cloudfabric.intrsre IP ${IP_Address} Interface Ethernet1/7 for node SELONX937203.cloudfabric.intrsre IP 172.16.154.38 has a transmitted utilization of 92 which is greater than the threshold of 85% Severity=5 ]   [Tx utilization]
 
 
 Steps to follow: 
@@ -137,7 +137,7 @@ Description:
 Whenever a node reboots, it generates an alert which needs to be verified manually to ascertain whether the event was part of a planned activity or an unplanned activity.
 
 Sample incident:                                             
-[ seclnx937202 6/4/2018 8:39 AM City = $ NodeName=SECLNX937202.cloudfabric.intraxa IP ${N=SwisEntity;M=Node.IP_Address}, Alert Node reboot Severity=3 ]
+[ seclnx937202 6/4/2018 8:39 AM City = $ NodeName=SECLNX937202.cloudfabric.intrsre IP ${N=SwisEntity;M=Node.IP_Address}, Alert Node reboot Severity=3 ]
 
 
 Steps to follow:
@@ -163,7 +163,7 @@ When a network connectivity issue leads to packet loss beyond accepted threshold
 
 Sample incident:                                             
 [ atsiapicm201-cimc 10/2/2017 9:42 PM City = $ NodeName=ATSIAPICM201-CIMC.cloudfabric.i
-ntraxa IP 172.16.154.204, Alert Node Packet loss is 80 % Severity=4 ]
+ntrsre IP 172.16.154.204, Alert Node Packet loss is 80 % Severity=4 ]
 
 Steps to follow:
 
@@ -187,7 +187,7 @@ When a power-supply module or Fan tray goes down. When current operating tempera
 
 
 Sample Incident:                                             
-[ seclf5240001 4/18/2018 5:19 AM City = $${N=SwisEntity;M=CustomProperties.City} NodeName=SECLF5240001.cloudfabric.intraxa IP ${N=SwisEntity;M=Node.IP_Address}, Hardware Alert Power Supply 1 on SECLF5240001.cloudfabric.intraxa is Critical Severity=3 ]
+[ seclf5240001 4/18/2018 5:19 AM City = $${N=SwisEntity;M=CustomProperties.City} NodeName=SECLF5240001.cloudfabric.intrsre IP ${N=SwisEntity;M=Node.IP_Address}, Hardware Alert Power Supply 1 on SECLF5240001.cloudfabric.intrsre is Critical Severity=3 ]
 
 Steps to follow:
 

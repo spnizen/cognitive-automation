@@ -48,7 +48,7 @@ Copy and append the below code in the "health.py" python file open in Visual Cod
 @app.route("/profile")
 def GetProfile():
     """Profile route"""
-    profile = {"Name": "Sridhar P Naidu", "Email Id": "sridhar.naidu@kyndryl.com", "Address": "Where I lay my head is my home"}
+    profile = {"Name": "Sridhar P Naidu", "Email Id": "sridhar.naidu@enterprise.com", "Address": "Where I lay my head is my home"}
     return jsonify(profile)
 
 ```
@@ -84,7 +84,7 @@ from requests.auth import HTTPBasicAuth
 # getting inputs from Github Profile and Security
 github_username  = "srpagada"
 basic_auth = HTTPBasicAuth(github_username, 'ghp_dNFQqnEwiovE0vJxiOXZmuqlQvjph10OcPzU')
-api_url = "https://github.kyndryl.net/api/v3/repos/AXA-Europe/<YOUR_REPO_NAME>/issues"
+api_url = "https://github.enterprise.net/api/v3/repos/Enterprise-Europe/<YOUR_REPO_NAME>/issues"
 
 @app.route('/createIssue', methods =["POST"])
 def createIssue():
@@ -116,7 +116,7 @@ def createIssue():
 7.3 Paste the earlier copied lines of code in Visual Code by pressing `Ctrl + V` and then press `Ctrl + S` to save the file.
 
 7.4 Fetch your required Information from Github Settings
- from Profile menu and selecting Developer Settings - Click on this URL [https://github.kyndryl.net/settings/tokens](https://github.kyndryl.net/settings/tokens) to open the github Developer Settings.
+ from Profile menu and selecting Developer Settings - Click on this URL [https://github.enterprise.net/settings/tokens](https://github.enterprise.net/settings/tokens) to open the github Developer Settings.
 
   ![IBM Cloud Register](assets/images/Github-Settings-PAT.png)  
 
@@ -133,7 +133,7 @@ Copy and replace the values in the gitAPI.py for the below shown variables in Vi
 ``` sh
 github_username  = "<replace with your github username>"
 basic_auth = HTTPBasicAuth(github_username, 'replace with your generated github Personal Access Token')
-api_url = "https://github.kyndryl.net/api/v3/repos/AXA-Europe/<replace with your git repo name>/issues"
+api_url = "https://github.enterprise.net/api/v3/repos/Enterprise-Europe/<replace with your git repo name>/issues"
 
 ```
 
@@ -215,7 +215,7 @@ If you see the 404 then you are on the right path. You can test the above URL us
 
 **Note**: The Organization and the Repository will be different and also the issue number will be running increment.
 
-Click on the URL and this will navigate you to the Kyndryl Guthub Site displaying the Issue as shown below:
+Click on the URL and this will navigate you to the Enterprise Guthub Site displaying the Issue as shown below:
 
   ![IBM Cloud Register](assets/images/BrowserResponse-Viewing-Issue-Github.png)
 

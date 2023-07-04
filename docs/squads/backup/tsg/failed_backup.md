@@ -14,7 +14,7 @@ For this error Check the below files are having full permissions for Oracle User
 - ls -ltr /opt/tivoli/tsm/client/oracle/bin64/TSM*
 
 ** SSL Connection Failure
-For this error, please check with Kyndryl team to update below command in TSM Server
+For this error, please check with Enterprise team to update below command in TSM Server
 - Upd node node_name sessionsecurity=transitional
 
 ** TCP IP Connection Failure
@@ -26,7 +26,7 @@ if Telnet not active use below command to check the same
 - nc -zv IP (or) DNS 1500
 
 ** Out of Storage Space
-- For this Error DBA team has nothing much to do , please check Kyndryl to check the space.
+- For this Error DBA team has nothing much to do , please check Enterprise to check the space.
 - In Parallel Check the Database growth for huge backup and see if there anyway to cleanup to reduce the DB size
 
 ** Intermittent Connection Failure

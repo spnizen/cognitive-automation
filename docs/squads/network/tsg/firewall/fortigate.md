@@ -11,7 +11,7 @@ Description:
 When a node or device is down or unreachable via remote monitoring
 
 Sample Incident:                                             
-[ seclfg370001 3/2/2020 3:21 PM City = $Clichy DC NodeName=SECLFG370001.cloudfabric.intraxa IP 172.16.154.116. Alert Node is Down and not reachable Severity=5 Attention commas replaced by dots. ]
+[ seclfg370001 3/2/2020 3:21 PM City = $Clichy DC NodeName=SECLFG370001.cloudfabric.intrsre IP 172.16.154.116. Alert Node is Down and not reachable Severity=5 Attention commas replaced by dots. ]
 
 Steps to follow:
 
@@ -72,7 +72,7 @@ Description:
 Whenever a node reboots, it generates an alert which needs to be verified manually to ascertain whether the event was part of a planned activity or an unplanned activity.
 
 Sample incident:                                             
-[ 5/14/2022 9:18 PM City = $Koln DC NodeName=NEKOFG370001.cloudfabric.intraxa IP ${N=SwisEntity;M=Node.IP_Address}. Alert Node reboot Severity=3 Attention commas replaced by dots. ]
+[ 5/14/2022 9:18 PM City = $Koln DC NodeName=NEKOFG370001.cloudfabric.intrsre IP ${N=SwisEntity;M=Node.IP_Address}. Alert Node reboot Severity=3 Attention commas replaced by dots. ]
 
 
 Steps to follow:
@@ -93,7 +93,7 @@ Checking Last Reboot time of FortiGate Firewall:
 ### 1.5 IP Filtering rule manual modification request 
 
 Description:                                                  
-Due to either an unsupported feature or any other technical reasons related to BAW/AXALIS portal or AXALIS database, an end-user may sometimes raise a Service-Request for manual creation/deletion/modification of configuration of an existing or new VIP on F5 LB.  
+Due to either an unsupported feature or any other technical reasons related to BAW/EnterpriseLIS portal or EnterpriseLIS database, an end-user may sometimes raise a Service-Request for manual creation/deletion/modification of configuration of an existing or new VIP on F5 LB.  
 
 Sample Request:                                              
 
@@ -103,7 +103,7 @@ Network: manual IP Filtering request
 
 Steps to follow:
 
-If a service request is received from AXA user, please follow below steps to make an initial analysis of the request parameters before proceeding for change implementation..
+If a service request is received from Enterprise user, please follow below steps to make an initial analysis of the request parameters before proceeding for change implementation..
 
 1. Validate user request template for must-have details, e.g. requester name/email, source/destination IP address, service port number.. if anything missing, revert back to the requester asking for missing details.
 2. Upon successful validation of the manual configuration request in above step, then proceed to assess and prepare a change plan based on request template.
@@ -111,9 +111,9 @@ If a service request is received from AXA user, please follow below steps to mak
 4. After successful completion of the change request, send out appropriate communication to the change requester.
 
 [ IMPORTANT NOTE ]                                           
-All manual configuration requests related to IP Filtering modification, must be raised as Service Request(SR), instead as an Incident(IN) and if a manual configuration request received as an Incident(IN), please update the below statement in the ticket and transfer the ticket back to AXA queue in Service Now.
+All manual configuration requests related to IP Filtering modification, must be raised as Service Request(SR), instead as an Incident(IN) and if a manual configuration request received as an Incident(IN), please update the below statement in the ticket and transfer the ticket back to Enterprise queue in Service Now.
 
-“ For any LB manual configurations requests, please use 'Private IaaS -Load Balance Rules' product in AXA Silva. These requests will not be handled under Incidents any more. 
+“ For any LB manual configurations requests, please use 'Private IaaS -Load Balance Rules' product in Enterprise Silva. These requests will not be handled under Incidents any more. 
 Please reach out to regional SDMs or cloud brokers for support”
 
 

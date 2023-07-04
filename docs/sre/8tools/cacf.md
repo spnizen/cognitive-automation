@@ -9,9 +9,9 @@ title: Cloud Automation Community Framework (CACF)
 * Deployed on a containerized platform - OpenShift Container Platform (OCP) to ease deployment in heterogenous environments to deliver scalability, high availability and accelerate innovation.
 * Manage IT through ‘agent-less’ connectivity
 * Accelerate evolution thanks to common technical framework (GitHub to develop & manage playbooks) and global community (to promote DevOps & Agile principles)
-* Combines knowledge of the entire Kyndryl delivery community based on the Continuous Engineering Model to support a structured automation or playbook development.
-* Adheres to Kyndryl's commitment to strengthening partnerships and continually improve service delivery. 
-* Provided as a Managed Service from IBM Cloud using Kyndryl Service Technology Platform (KSTP).
+* Combines knowledge of the entire Enterprise delivery community based on the Continuous Engineering Model to support a structured automation or playbook development.
+* Adheres to Enterprise's commitment to strengthening partnerships and continually improve service delivery. 
+* Provided as a Managed Service from IBM Cloud using Enterprise Service Technology Platform (KSTP).
 
   ![CACF](../8tools/assets/images/cacf.png)
 

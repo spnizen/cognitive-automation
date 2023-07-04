@@ -3,52 +3,52 @@ template: overrides/main.html
 title: PM Overview
 ---
 
-# <b>AXA Problem Management - PIAAS</b>
+# <b>Enterprise Problem Management - PIAAS</b>
 
-## 1. AXA Problem Management Process Flow
+## 1. Enterprise Problem Management Process Flow
 
 ???+ "Flowchart - Lifecycle of a Problem record"
 
     ``` mermaid
         graph TD
         X((Start)) ==> S[MI Closed/Final Comms sent] ==> S1[PM to share postmortem template to SAM] & A[PM to create Problem ticket in Snow];
-        S1 ==> S2[PM to validate the postmortem] ==> S3[PM to share the postmortem to AXA] ==> Y((End));
+        S1 ==> S2[PM to validate the postmortem] ==> S3[PM to share the postmortem to Enterprise] ==> Y((End));
         A ==> A1[PM to share RCA template to SMEs] ==> A2[PM to schedule RCA review meetings with SMEs]
-        ==> B{Internal approval from SRE on RCA?} ==> |Yes| B1[PM to review and share the DRAFT RCA to AXA]
+        ==> B{Internal approval from SRE on RCA?} ==> |Yes| B1[PM to review and share the DRAFT RCA to Enterprise]
         ==> C[PM to track all open actions]
         ==> C1[Publish internal weekly dashboard]
-        ==> C2[Review RCA with AXA]
-        ==> C3[Await for closure approval from AXA]
+        ==> C2[Review RCA with Enterprise]
+        ==> C3[Await for closure approval from Enterprise]
         ==> Z((End));
         B ==> |No| A2
     ```
 
 ## **2. Problem Management**
 
-This section of the AXA / Kyndryl Process Interface Manual (PIM) provides interfaces for requesting and obtaining in-scope services pursuant to the Master Services Agreement with Kyndryl for PIaas services. Nothing contained in this document is intended to amend the terms and conditions of the Agreement, and in the event of a conflict, the Agreement takes precedence.
-This document is intended to be used by both AXA and Kyndryl personnel responsible for providing the required services.
+This section of the Enterprise / Enterprise Process Interface Manual (PIM) provides interfaces for requesting and obtaining in-scope services pursuant to the Master Services Agreement with Enterprise for PIaas services. Nothing contained in this document is intended to amend the terms and conditions of the Agreement, and in the event of a conflict, the Agreement takes precedence.
+This document is intended to be used by both Enterprise and Enterprise personnel responsible for providing the required services.
 
 ### 2.1. Description
 
-Problem Management minimizes the Impact of Problems affecting the availability and services in the AXA environment through analysis, tracking and prevention of Problems from impacting managed IT resources. Problem Management resolves Problems affecting the IT service, both reactively and proactively. Problem Management finds trends in Incidents, groups those Incidents into Problems, identifies the Root Causes of Problems and initiates Change Requests (RFCs) required to implement workarounds and to fix the Problems. The process is primarily concerned with establishing the Root Cause of an Incident and its subsequent resolution and prevention. The reactive function is to solve Problems relating to one or more Incidents. The proactive function is to identify and solve Problems before Incidents occur. 
+Problem Management minimizes the Impact of Problems affecting the availability and services in the Enterprise environment through analysis, tracking and prevention of Problems from impacting managed IT resources. Problem Management resolves Problems affecting the IT service, both reactively and proactively. Problem Management finds trends in Incidents, groups those Incidents into Problems, identifies the Root Causes of Problems and initiates Change Requests (RFCs) required to implement workarounds and to fix the Problems. The process is primarily concerned with establishing the Root Cause of an Incident and its subsequent resolution and prevention. The reactive function is to solve Problems relating to one or more Incidents. The proactive function is to identify and solve Problems before Incidents occur. 
 
 ## <b>3. Scope</b>
 
-Following is the scope of Problem Management as it relates to AXA:
+Following is the scope of Problem Management as it relates to Enterprise:
 
-  - Problem Management applies to IT services and components managed by Kyndryl: PIaas 
+  - Problem Management applies to IT services and components managed by Enterprise: PIaas 
   - Problem analysis and review of items listed in Problem Analysis Criteria section
   - Root Cause investigation
   - Creation & Submission of Post-Mortem reports, post Incident resolution & Final communication.
   - Production of Root Cause Analysis (RCA)
   - Management of Problem records and review of the status of corrective actions
-  - Kyndryl is responsible for Kyndryl owned Problems (internal) and AXA is responsible for related Problems.
+  - Enterprise is responsible for Enterprise owned Problems (internal) and Enterprise is responsible for related Problems.
 
 ## <b>4. Responsibility Matrix</b>
 
 ???+ info "RACI Matrix:"
 
-    |(For Kyndryl owned Problems)| Kyndryl | AXA|
+    |(For Enterprise owned Problems)| Enterprise | Enterprise|
     | :--------- |:-----------| :----------|
     |Submitting Problem Records|R,A|C,I|
     |Performing Root Cause Analysis (RCA) and identifying cause|R,A|C,I|
@@ -110,7 +110,7 @@ IR-PI02 : « Post Mortem » P1 and P2 incident report distribution
 
    **Indicator Definition**
 
-   IR-PI02 : Rate of respect of the delay of distribution of the "Post Mortem" report when incident is resolved by Kyndryl.
+   IR-PI02 : Rate of respect of the delay of distribution of the "Post Mortem" report when incident is resolved by Enterprise.
 
    **Service Level**
 
@@ -126,8 +126,8 @@ IR-PI02 : « Post Mortem » P1 and P2 incident report distribution
 
    **Scope**
 
-   All P1 and P2 incidents (= severity 1 and 2 at Kyndryl side) raised by AXA or by monitoring or by Kyndryl with AXA impact (outage or loss of performance/functionality,..) that were resolved during the month - i.e. that went thru a "Resolved" status in Kyndryl ITSM tool during the month.
-   In order to ensure a validation from AXA, the Post Mortem should contain the following information (with the ad hoc level of quality):
+   All P1 and P2 incidents (= severity 1 and 2 at Enterprise side) raised by Enterprise or by monitoring or by Enterprise with Enterprise impact (outage or loss of performance/functionality,..) that were resolved during the month - i.e. that went thru a "Resolved" status in Enterprise ITSM tool during the month.
+   In order to ensure a validation from Enterprise, the Post Mortem should contain the following information (with the ad hoc level of quality):
  
    * Chronology of events
    * Exhaustive impacts identification
@@ -139,10 +139,10 @@ IR-PI02 : « Post Mortem » P1 and P2 incident report distribution
 
   |Primary Contacts|Name|Email|
   |:----------|:-----------:|:----------:|
-  |AXA Customer Focal| Simon Squance|Simon.squance@axa.com|
-  |Kyndryl Problem Management Team Lead / Focal|Penin Priya/<p>Sreeranga Raghavan</p>|Penin.Priya@kyndryl.com<p>Sreeranga.Raghavan@kyndryl.com</P>|
-  |IBM Service Manager (ITSM Leader)|Anitha Kodigemakki|Anitha.kodigemakki@kyndryl.com|
-  |Incident management Focal|Raghav Nayak|Raghav.Nayak@kyndryl.com|
+  |Enterprise Customer Focal| Simon Squance|Simon.squance@sre.com|
+  |Enterprise Problem Management Team Lead / Focal|Penin Priya/<p>Sreeranga Raghavan</p>|Penin.Priya@enterprise.com<p>Sreeranga.Raghavan@enterprise.com</P>|
+  |IBM Service Manager (ITSM Leader)|Anitha Kodigemakki|Anitha.kodigemakki@enterprise.com|
+  |Incident management Focal|Raghav Nayak|Raghav.Nayak@enterprise.com|
 
   |Meetings|Description|Frequency|Day/Time|
   |:------|:-----------|:-------:|:----:|

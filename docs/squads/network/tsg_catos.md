@@ -32,7 +32,7 @@ Description:
 When an active Interface goes DOWN and the uplink/downlink connection breaks.
 
 Sample Incident:                                             
-[ atkenx937202 6/14/2018 4:55 PM Interface Ethernet1/29 for  NodeName=ATKENX937202.cloudfabric.intraxa IP 172.16.154.214, interface status is Down Severity=5 ]
+[ atkenx937202 6/14/2018 4:55 PM Interface Ethernet1/29 for  NodeName=ATKENX937202.cloudfabric.intrsre IP 172.16.154.214, interface status is Down Severity=5 ]
 
 Steps to follow:
 
@@ -54,7 +54,7 @@ Description:
 When the average CPU usage increases beyond its accepted threshold level : 70% warning level and 85% critial level
 
 Sample Incident:                                             
-[ seloc2960x01 7/6/2018 12:22 AM City = $ NodeName= SELOC2960X01.cloudfabric.intraxa IP 172.16.154.60 CPU Load :75 % , Alert High CPU Severity=4 ]
+[ seloc2960x01 7/6/2018 12:22 AM City = $ NodeName= SELOC2960X01.cloudfabric.intrsre IP 172.16.154.60 CPU Load :75 % , Alert High CPU Severity=4 ]
 
 Steps to follow:
 
@@ -77,7 +77,7 @@ Description:
 When the average Memory usage increases beyond its accepted threshold level : 70% warning level and 85% critial level
 
 Sample Incident:                                             
-[ seclapicm201 $ {DateTime} 172.16.144.129 NodeName=SECLAPICM201.cloudfabric.intraxa IPaddress 172.16.144.129 memory used is 21 MB Severity=5 seclapicm201 Friday, May 12, 2017 12:17 PM 172.16.144.129 NodeName=SECLAPICM201.cloudfabric.intrax a IPaddress 172.16.144.129 memory used
+[ seclapicm201 $ {DateTime} 172.16.144.129 NodeName=SECLAPICM201.cloudfabric.intrsre IPaddress 172.16.144.129 memory used is 21 MB Severity=5 seclapicm201 Friday, May 12, 2017 12:17 PM 172.16.144.129 NodeName=SECLAPICM201.cloudfabric.intrax a IPaddress 172.16.144.129 memory used
 is 21 MB Severity=4 ]
 
 
@@ -104,7 +104,7 @@ Description:
 [Type-2] When the average Tx utilization on an Interface increases beyond its accepted threshold level : 70% Warning level and 85% Critical level
 
 Sample Incident:                                             
-[ seclc2960x01 3/15/2020 9:33 PM City = $${N=SwisEntity;M=CustomProperties.City} NodeName=SECLC2960X01.cloudfabric.intraxa IP 172.16.154.30 Interface GigabitEthernet2/0/1 ? AXA INTERCO 6k has a received utilization of 79.Alert High Interface Utilization Severity=4 Attention commas replaced by dots  ] [Rx utilization]
+[ seclc2960x01 3/15/2020 9:33 PM City = $${N=SwisEntity;M=CustomProperties.City} NodeName=SECLC2960X01.cloudfabric.intrsre IP 172.16.154.30 Interface GigabitEthernet2/0/1 ? Enterprise INTERCO 6k has a received utilization of 79.Alert High Interface Utilization Severity=4 Attention commas replaced by dots  ] [Rx utilization]
 
 [ nekoc2960x01 4/19/2018 6:06 AM City =$${N=SwisEntity;M=CustomProperties.City} NodeName=NEKOC2960X01.cloud.ibm.com IP172.16.154.132 Interface GigabitEthernet1/0/24 ? UCS C240-M4 #1(TSM) has a transmitted utilization of 75 %,Alert High Interface UtilizationSeverity=4  ]  
 [Tx utilization]
@@ -177,7 +177,7 @@ When a power-supply module or Fan tray goes down. When current operating tempera
 
 
 Sample Incident:                                             
-[ nasuc2960x01 11/11/2019 7:10 AM City = $${N=SwisEntity;M=CustomProperties.City} NodeName=NASUC2960X01.cloudfabric.intraxa IP ${N=SwisEntity;M=Node.IP_Address}, Hardware Alert Switch 1 - Power Supply 1 on NASUC2960X01.cloudfabric.intraxa is Critical Severity=3 ]
+[ nasuc2960x01 11/11/2019 7:10 AM City = $${N=SwisEntity;M=CustomProperties.City} NodeName=NASUC2960X01.cloudfabric.intrsre IP ${N=SwisEntity;M=Node.IP_Address}, Hardware Alert Switch 1 - Power Supply 1 on NASUC2960X01.cloudfabric.intrsre is Critical Severity=3 ]
 
 Steps to follow:
 

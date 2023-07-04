@@ -64,7 +64,7 @@ Copy and append the below code in the "health.py" python file open in Visual Cod
 @app.route("/profile")
 def GetProfile():
     """Profile route"""
-    profile = {"Name": "Sridhar P Naidu", "Email Id": "sridhar.naidu@kyndryl.com", "Address": "Where I lay my head is my home"}
+    profile = {"Name": "Sridhar P Naidu", "Email Id": "sridhar.naidu@enterprise.com", "Address": "Where I lay my head is my home"}
     return jsonify(profile)
 
 ```
@@ -100,7 +100,7 @@ from requests.auth import HTTPBasicAuth
 # getting inputs from Github Profile and Security
 github_username  = "srpagada"
 basic_auth = HTTPBasicAuth('srpagada', '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')
-api_url = "https://github.kyndryl.net/api/v3/repos/sre-axa/steady-state-tasks/issues"
+api_url = "https://github.enterprise.net/api/v3/repos/sre-sre/steady-state-tasks/issues"
 
 @app.route('/create', methods =["POST"])
 def issue():
@@ -136,7 +136,7 @@ def issue():
 ```sh
 github_username  = "srpagada"
 basic_auth = HTTPBasicAuth('srpagada', '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')
-api_url = "https://github.kyndryl.net/api/v3/repos/sre-axa/steady-state-tasks/issues"
+api_url = "https://github.enterprise.net/api/v3/repos/sre-sre/steady-state-tasks/issues"
 ```
 
 

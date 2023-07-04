@@ -3,11 +3,11 @@ template: overrides/main.html
 title: CM Overview
 ---
 
-# <b>AXA Change Management</b>
+# <b>Enterprise Change Management</b>
 ## <b>1 Change Managemet</b>
 
-This section of the AXA / Kyndryl Process Interface Manual provides customer interfaces for requesting and obtaining in-scope services pursuant to the Master Services Agreement with Kyndryl. Nothing contained in this document is intended to amend the terms and conditions of the Agreement, and in the event of a conflict, the Agreement takes precedence.
-This document is intended to be used by both AXA and KYNDRYL personnel responsible for providing the required services.
+This section of the Enterprise / Enterprise Process Interface Manual provides customer interfaces for requesting and obtaining in-scope services pursuant to the Master Services Agreement with Enterprise. Nothing contained in this document is intended to amend the terms and conditions of the Agreement, and in the event of a conflict, the Agreement takes precedence.
+This document is intended to be used by both Enterprise and KYNDRYL personnel responsible for providing the required services.
 
 ## <b>1.1 Description </b>
 
@@ -18,7 +18,7 @@ Release Management plans, prepares and finalizes Release packages that are fit f
 
 ## <b> 1.2 Scope</b>
 
-Following is the scope of Change / Release / Deployment Management as it relates to AXA:
+Following is the scope of Change / Release / Deployment Management as it relates to Enterprise:
 
   - Change Management is used for IT hardware and software in scope of the Agreement
   - Release Management is used for:
@@ -28,19 +28,19 @@ Following is the scope of Change / Release / Deployment Management as it relates
   - Deployment Management is used for: 
       1.    system and applications supported by KYNDRYL.  
       2.	Infrastructure environments. 
-      3.	Upgrade (Windows SP / AIX TL…): Deploy new image in production after AXA validation.
-      4.	Migration (New Operating System Version): Deploy new image provided by AXA.
+      3.	Upgrade (Windows SP / AIX TL…): Deploy new image in production after Enterprise validation.
+      4.	Migration (New Operating System Version): Deploy new image provided by Enterprise.
 Exclusions:      
-  -	Release Management and Deployment Management do not apply to systems and applications supported by AXA (AXA VM)
+  -	Release Management and Deployment Management do not apply to systems and applications supported by Enterprise (Enterprise VM)
 Environment and Audience:  
-  - AXA and KYNDRYL service delivery personnel supporting locations as per the Agreement
+  - Enterprise and KYNDRYL service delivery personnel supporting locations as per the Agreement
 
 
 ## <b>1.3 Responsibility Matrix</b>
 
 ??? info "Change Management RACI"
 
-    |Key Activities| Kyndryl | AXA|
+    |Key Activities| Enterprise | Enterprise|
     | :--------- |:-----------| :----------|
     |Change Planning when change is required|R,A,C,I|C,I|
     |Assess for Business Impact|R,A,C,I|C,I|
@@ -101,7 +101,7 @@ The Change Manager ensures that the Change Management process is executed and is
  ``` mermaid
   
   graph TB
-    subgraph <b>AXA</b>
+    subgraph <b>Enterprise</b>
 
     B[Business impact assessment input] ==> C[Approved/Rejected]
     Y([Receive a notification & Close the change])
@@ -134,9 +134,9 @@ The Change Manager ensures that the Change Management process is executed and is
 
 ## <b>1.7 Region details</b>
 
-??? info  "<b>Regional SDM Kyndryl and AXA : </b>"
+??? info  "<b>Regional SDM Enterprise and Enterprise : </b>"
 
-    |Region|Country|Data centres|Users|Kyndryl SDM|AXA SDM|
+    |Region|Country|Data centres|Users|Enterprise SDM|Enterprise SDM|
     | :--------- | :-----------| :----------| :----------| :----------| :-----------|
     |**Asia (AT)**|Singapore|Keppel (APDC4), Singtel (APDC3)|Sigapore , Japan|Gururaja A Upadhya|Vitali KRONHARDT|
     |**NE**|Germany|Leverkusen, Koln|Geramny, Belgium|ANAND KESHRI|Engel Guido and Stephane(Belgium)|

@@ -9,12 +9,12 @@ title: Weekly Reporting Overview
 
 |Sl. No. |Report Name |Report Usage|Duration|Manual or Automated|Report Owner|
 |:----------- | :--------- | :-------------| :------------- | :------------| :------------- |
-|1|[AXA Weekly Report](#AWR)|External|1H|Manual|Suma|
+|1|[Enterprise Weekly Report](#AWR)|External|1H|Manual|Suma|
 |2|[HE06](#he)|External|30m|Manual|Suma|
 |3|[Capacity Report](#capa)|External|1H|Automated|Suma|
 |4|[PIF - Sar Weekly for run deck](#pif)|External|1H|Manual|Suma|
 |5|[VM Reports](#vm)|External|15m|Automated|Suma|
-|6|[AXA Alarm Report](#alarm)|Internal; External (PIF data)|30m|Automated|Suma|
+|6|[Enterprise Alarm Report](#alarm)|Internal; External (PIF data)|30m|Automated|Suma|
 |7|[Last week closed](#last)|External|30m|Automated|Suma|
 |8|[Tag discrepancy Report](#tag)|Internal|30m|Automated|Suma|
 |9|[Weekly 2nd copy Replication](#2nd)|External|30m|Manual|Suma|
@@ -27,7 +27,7 @@ title: Weekly Reporting Overview
 |16|[Weekly Backup KPI](#kpi) ( Including initial file cleanup & Calculation)|External|4H|Manual|Abbas|
 
 
-## 1. AXA Weekly Report<a name="AWR"></a>
+## 1. Enterprise Weekly Report<a name="AWR"></a>
 
 ## 2. HE06<a name="he"></a>
 
@@ -37,7 +37,7 @@ title: Weekly Reporting Overview
 
 ## 5. VM Reports<a name="vm"></a>
 
-## 6. AXA Alarm Report<a name="alarm"></a>
+## 6. Enterprise Alarm Report<a name="alarm"></a>
 
 ## 7. Last week closed<a name="last"></a>
 

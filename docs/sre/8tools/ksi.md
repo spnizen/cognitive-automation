@@ -1,1 +1,1 @@
-Kyndryl Service Insights 
+Enterprise Service Insights 

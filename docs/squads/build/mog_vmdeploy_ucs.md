@@ -91,7 +91,7 @@ Partitioning with LVM
 
 #### 6.2 Login information for UCS Infra vcenter
 
-Login to UCS Infra Vcenter -https://seclpravmwsrv01.cloudfabric.intraxa/ui
+Login to UCS Infra Vcenter -https://seclpravmwsrv01.cloudfabric.intrsre/ui
 
 ![UCS vCenter](../assets/images/UCSVcenter.png)
 
@@ -470,18 +470,18 @@ gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
 1. Install following packages through yum:
 yum -y install realmd oddjob oddjob-mkhomedir sssd adcli krb5-workstation samba-common-tools
 2. Discover the Active Directory domain as:
-realm discover cloudfabric.intraxa
+realm discover cloudfabric.intrsre
 3. Once the AD domain is successfully discovered, join the system to AD domain as:
-realm join -U nirpaul1@cloudfabric.intraxa cloudfabric.intraxa
+realm join -U nirpaul1@cloudfabric.intrsre cloudfabric.intrsre
 4. Now check whether user information can be retrieved from AD and the AD user is able to login through ssh. By default you will need to use the users FQDN to login. This is due to the use_fully_qualified_names setting is set to True by default in /etc/sssd/sssd.conf.
 
 CD /etc /sssd
 Vi sssd.conf
-id dhanalakshmi@cloudfabric.intraxa
+id dhanalakshmi@cloudfabric.intrsre
 5. Restrict to Site DC or Specific DC - Edit vi  configuration file, add the following lines under the [domain] section:
 Use the ad_server and, optionally, ad_server_backup options for Active Directory servers. Use the ad_site option for Active Directory sites. For more details on these options, see the sssd-ad(5) man page.
-ad_server = SECLPRVSYSADP01.cloudfabric.intraxa
-ad_server_backup = SELOPRVSYSADP01.cloudfabric.intraxa
+ad_server = SECLPRVSYSADP01.cloudfabric.intrsre
+ad_server_backup = SELOPRVSYSADP01.cloudfabric.intrsre
 6. Permission   need to skip
 realm deny --all
 realm permit -g CLOUDFABRIC\\LIN-ADM CLOUDFABRIC\\xxxxxxx

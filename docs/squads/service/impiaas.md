@@ -2,9 +2,9 @@
 template: overrides/main.html
 title: IM Overview
 ---
-#   <b>AXA Incident Management</b>
+#   <b>Enterprise Incident Management</b>
 ##  PIAAS Incident Management Overview
-## 1. AXA impacted MI process
+## 1. Enterprise impacted MI process
   
 ???+ "Flowchart - Lifecycle of a Major Incident"
 
@@ -14,12 +14,12 @@ title: IM Overview
         T([Monitoring Alerts]) & S([From Silva]) ==> id;
         id[(SNOW tool)] ==>
         A[Command Center Queue] ==> B[Acknowledged by Command Center] 
-        ==> D[CC to warm transfer to resolver teams & Inform SAM/SDM] ==> E{AXA impacted?};
+        ==> D[CC to warm transfer to resolver teams & Inform SAM/SDM] ==> E{Enterprise impacted?};
         E ==>|Yes| E1[SAM Process established & Bridge the incident to SILVA];
-        E1 ==> F[Call Global AXA MIM & Start the communication]
+        E1 ==> F[Call Global Enterprise MIM & Start the communication]
         ==> F1[Technical team to work and restore the service]
         ==> F2[Service restored, monitoring] 
-        ==> F3[Close the incident with approval from AXA]
+        ==> F3[Close the incident with approval from Enterprise]
         ==>W((End))
         E ==>|No| E2[Assign the ticket to respective resolver groups for investigation] 
         ==> G[Resolver group works and closes the ticket]
@@ -28,8 +28,8 @@ title: IM Overview
 
 ### 1.1	Incident Management
 
-   This section of the AXA / Kyndryl Process Interface Manual provides customer interfaces for requesting and obtaining in-scope services pursuant to the Master Services Agreement with Kyndryl. Nothing contained in this document is intended to amend the terms and conditions of the Agreement, and in the event of a conflict, the Agreement takes precedence.
-   This document is intended to be used by both AXA and IBM personnel responsible for providing the required services.
+   This section of the Enterprise / Enterprise Process Interface Manual provides customer interfaces for requesting and obtaining in-scope services pursuant to the Master Services Agreement with Enterprise. Nothing contained in this document is intended to amend the terms and conditions of the Agreement, and in the event of a conflict, the Agreement takes precedence.
+   This document is intended to be used by both Enterprise and IBM personnel responsible for providing the required services.
 
 ## 2.	Description
 
@@ -75,9 +75,9 @@ The Service Availability manager / Duty Manager role is responsible for managing
     - Managing and owning the Major Incident through service recovery
     - Reviewing classification of the Incident as a Major Incident
     - Determining and handling the scope of the Major Incident
-    - Provide updates to AXA during Major Incident lifecycle
+    - Provide updates to Enterprise during Major Incident lifecycle
     - Facilitate and lead information exchange between various resolver teams involved in Service Restoration
-    - Working collaboratively with AXA convening and leading the required resources to support Resolution of the Major Incident
+    - Working collaboratively with Enterprise convening and leading the required resources to support Resolution of the Major Incident
     - Prompt notification upon detection of Major Incident
     - Driving, assessing and handling the recovery plan
     - Assembling a team of resolver groups (other levels of support and across platforms as required) within the allowable time when additional support is required
@@ -90,9 +90,9 @@ The Service Availability manager / Duty Manager role is responsible for managing
     -	Participating in Major Incident reviews
     - Prompt Notification upon detection of Major Incident)
     - Obtaining regular updates regarding the status of resolution.
-    - Provide updates to AXA during Major Incident lifecycle
+    - Provide updates to Enterprise during Major Incident lifecycle
     - Facilitate and lead information exchange between various resolver teams involved in Service Restoration.
-    - Working collaboratively with AXA convening and leading the required resources to support Resolution of the Major Incident.
+    - Working collaboratively with Enterprise convening and leading the required resources to support Resolution of the Major Incident.
 
 
 ## 5. Incident Priority
@@ -201,10 +201,10 @@ The Service Availability manager / Duty Manager role is responsible for managing
 ## 8. CritSitWiz - Useful Links
    1. CritSitWiZ PROD: https://critsitwiz.mybluemix.net/#/login-message
    2. CritSitWiz TEST: https://critsitwiztest.mybluemix.net/#/login-message
-   3. Instruction : https://kyndryl.ent.box.com/s/utvq60tyfcnms8jng7z2j5ui5b8yop9k
-   4. Global Major Incident Management Policy (Timeline Included) : https://kyndryl.ent.box.com/s/5w0m97rc985il1wqwafevzk1nz7enwre
+   3. Instruction : https://enterprise.ent.box.com/s/utvq60tyfcnms8jng7z2j5ui5b8yop9k
+   4. Global Major Incident Management Policy (Timeline Included) : https://enterprise.ent.box.com/s/5w0m97rc985il1wqwafevzk1nz7enwre
    5. Market France: Major Incident Management – Timelines: https://w3-01.ibm.com/services/pram/oslc/assets/841A27BA-70B3-5130-2882-8AD71489C995
-   6. MIM Education Video: https://kyndryl.ent.box.com/s/fmx88femoax2ik8jrqc25us3xx7w56f9
+   6. MIM Education Video: https://enterprise.ent.box.com/s/fmx88femoax2ik8jrqc25us3xx7w56f9
    7. Education link: https://w3.ibm.com/w3publisher/dsm-emea/processes/incident/critsitwiz-how-to-sessions
 
 !!! Example

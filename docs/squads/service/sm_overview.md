@@ -3,7 +3,7 @@ template: overrides/main.html
 title: SM Overview
 ---
 
-# <u><b><span style="color: Teal;">AXA Service Management</span></u></b>
+# <u><b><span style="color: Teal;">Enterprise Service Management</span></u></b>
 
 ## 1. Introduction
 
@@ -39,17 +39,17 @@ IT Service Management or ITSM is the set of activities that can help manage the 
 ## 3. The Team 
 |     Name               |            Email                    |       Role             |
 | :--------------------- | :---------------------------------- | :--------------------- | 
-|   Anitha Kodigemakki   |   Anitha.kodigemakki@kyndryl.com    |    Squad Lead          |
-|   Penin Priya          |   Penin.Priya@kyndryl.com           |    Team Lead           |
-|   Avinash PB           |   Avinash.Pb@kyndryl.com            |    SAM/IM              |
-|   Jitendu Daspatnaik   |   Jitendu.Daspatnaik@kyndryl.com    |    SAM/IM              |
-|   Abhishek Anand       |   Abhishek.Anand@kyndryl.com        |    SAM/IM              |
-|   Vidyadhar Bidaralli  |   Vidyadhar.Bidaralli@kyndryl.com   |    SAM/IM              |
-|   Sreeranga Raghavan   |   Sreeranga.Raghavan@kyndryl.com    |    Problem Manager     |
-|   Rekha Pandey         |   Rekha.Pandey@kyndryl.com          |    Change Manager      |
-|   Seema Vijay          |   Seema.Vijay@kyndryl.com           |    Change Manager      |
-|   Suma Maraiah         |   Suma.Maraiah@kyndryl.com          |    Reporting Lead      |
-|   Abbas Ali R          |   Abbas.Ali.R@kyndryl.com           |    Reporting Analyst   |
+|   Anitha Kodigemakki   |   Anitha.kodigemakki@enterprise.com    |    Squad Lead          |
+|   Penin Priya          |   Penin.Priya@enterprise.com           |    Team Lead           |
+|   Avinash PB           |   Avinash.Pb@enterprise.com            |    SAM/IM              |
+|   Jitendu Daspatnaik   |   Jitendu.Daspatnaik@enterprise.com    |    SAM/IM              |
+|   Abhishek Anand       |   Abhishek.Anand@enterprise.com        |    SAM/IM              |
+|   Vidyadhar Bidaralli  |   Vidyadhar.Bidaralli@enterprise.com   |    SAM/IM              |
+|   Sreeranga Raghavan   |   Sreeranga.Raghavan@enterprise.com    |    Problem Manager     |
+|   Rekha Pandey         |   Rekha.Pandey@enterprise.com          |    Change Manager      |
+|   Seema Vijay          |   Seema.Vijay@enterprise.com           |    Change Manager      |
+|   Suma Maraiah         |   Suma.Maraiah@enterprise.com          |    Reporting Lead      |
+|   Abbas Ali R          |   Abbas.Ali.R@enterprise.com           |    Reporting Analyst   |
 |         |            |     |
 
 
@@ -94,8 +94,8 @@ IT Service Management or ITSM is the set of activities that can help manage the 
   * Contribute to establish and mature Service Level Management Governance
 
 
-## 6. AXA Service Level Management
-### 6.1 Kyndryl-AXA: Agreed SLA/KPI penalty & non-penalty
+## 6. Enterprise Service Level Management
+### 6.1 Enterprise-Enterprise: Agreed SLA/KPI penalty & non-penalty
 ???+ SLA_KPI
     ![CACF](../service/assets/images/sla.png)
 
@@ -153,7 +153,7 @@ Cloud Infrastructure availability
 
   **Indicator Definition**
 
-  ID-HE03 Indicator: measure the availability rate of Cloud Infrastructure running the AXA Application VMs
+  ID-HE03 Indicator: measure the availability rate of Cloud Infrastructure running the Enterprise Application VMs
 
   **Service Level**
 

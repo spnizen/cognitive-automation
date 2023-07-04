@@ -16,7 +16,7 @@ Click on Active Directory Users and Computers
 
 ![AD Users & Computer1](../assets/images/ADUserComputer1.png)
 
-Right Click on  INFRA under the following path  Cloudfabric.intraxa-→Servers-→INFRA 
+Right Click on  INFRA under the following path  Cloudfabric.intrsre-→Servers-→INFRA 
 Click on NEW-->Computer
 
 ![AD Users & Computer2](../assets/images/ADUserComputer2.png)
@@ -63,7 +63,7 @@ Click on + for adding IP Addresses
 ![IP Rang ](../assets/images/IPRang.png)
 
 Use the Backup and Recovery servers IPs range
-Attach IP address reserved into the file on (https://ibm.ent.box.com) : IBM Internal AXA Private Cloud T&T > Network > IP MANAGEMENT > LANIPMgmt – v…..xlsx
+Attach IP address reserved into the file on (https://ibm.ent.box.com) : IBM Internal Enterprise Private Cloud T&T > Network > IP MANAGEMENT > LANIPMgmt – v…..xlsx
 
 https://ibm.ent.box.com/folder/14002280083
 
@@ -92,7 +92,7 @@ Remote path: /share/receive/secl/all/baseline/prod/bmls/images/IBM/TSM/TSM_WIN20
 
 /share/receive/secl/all/baseline/prod/bmls/images/IBM/TSM/TSM_RHEL7_V2.ova
 
-User ID/Password : dhanalakshmi.k@cloudfabric.intraxa/xxxxxxxxxxx
+User ID/Password : dhanalakshmi.k@cloudfabric.intrsre/xxxxxxxxxxx
 
 Cloud Group : INR03
 
@@ -150,7 +150,7 @@ login with ibmadmin1 user . Pwd :
 
 ![System Properties1](../assets/images/SytemProperties1.png)
 
-Adding the host in to  cloudfabric.intraxa domain
+Adding the host in to  cloudfabric.intrsre domain
 
 ![System Properties2](../assets/images/SytemProperties2.png) 
 ![System Properties3](../assets/images/SytemProperties3.png)
@@ -223,7 +223,7 @@ Select the interface ens192 and Enter
 
 ![nmtui2](../assets/images/nmtui2.png)
 
-Add the search domain: cloudfabric.intraxa
+Add the search domain: cloudfabric.intrsre
 
 Select the Require IPv4 addressing for this connection
 
@@ -251,7 +251,7 @@ on Use Public servers:
 
 remove the rhel servers
 
-add the servers (get the information from the file in the box : All Files > IBM Internal AXA Private Cloud build> Network > IP MANAGEMENT > IPPlanOOB......xlsx
+add the servers (get the information from the file in the box : All Files > IBM Internal Enterprise Private Cloud build> Network > IP MANAGEMENT > IPPlanOOB......xlsx
 
 Get the GW for both site
 
@@ -288,11 +288,11 @@ Install the necessary package for integrate the vm to domain via:
 
 yum -y install realmd oddjob oddjob-mkhomedir sssd adcli krb5-workstation
 
-Discover the domain: realm discover cloudfabric.intraxa
+Discover the domain: realm discover cloudfabric.intrsre
 
 ![Discover domain](../assets/images/DiscoverDomain.png)
 
-Join the domain with: realm join -U tambekar@cloudfabric.intraxa cloudfabric.intraxa
+Join the domain with: realm join -U tambekar@cloudfabric.intrsre cloudfabric.intrsre
 
 ![Join domain](../assets/images/JoinDomain.png)
 
@@ -301,13 +301,13 @@ For removing we have to use “realm leave”
 
 ![realm leave](../assets/images/RealmLeave.png)
 
-realm join -U tambekar@cloudfabric.intraxa cloudfabric.intraxa
+realm join -U tambekar@cloudfabric.intrsre cloudfabric.intrsre
 
 image
 
 Where “user” is your login
 
-When the prompt is available type: id user@cloudfabric.intraxa
+When the prompt is available type: id user@cloudfabric.intrsre
 
 Where “user” is your login
 
@@ -319,9 +319,9 @@ Edit the sssd configuration file: vi /etc/sssd/sssd.conf
 
 Add the following line at the end:
 
-ad_server = SECLPRVSYSADP01.cloudfabric.intraxa
+ad_server = SECLPRVSYSADP01.cloudfabric.intrsre
 
-ad_server_backup = NEKOPRVSYSADP01.cloudfabric.intraxa
+ad_server_backup = NEKOPRVSYSADP01.cloudfabric.intrsre
 
 Configure the permissions on the vm:
 

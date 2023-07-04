@@ -2,7 +2,7 @@
 template: overrides/main.html
 ---
 
-# Cloning the AXA master site from Kyndryl GitHub 
+# Cloning the Enterprise master site from Enterprise GitHub 
 
 ???+ important " QUICK SETUP GUIDE "
     ``` mermaid
@@ -15,15 +15,15 @@ template: overrides/main.html
             click A "./#cloning-the-repository-on-local"
             click B "./#copy-contents-from-the-cloned-directory"
             click C "./#add-and-commit-to-git"
-            click D "./#previewing-axa-site-from-your-work-directory-on-local"
+            click D "./#previewing-sre-site-from-your-work-directory-on-local"
     ```
     __A__ = Cloning the Repository on local  
     __B__ = Copy contents from the cloned directory  
     __C__ = Add and Commit to Git  
-    __D__ = Previewing AXA site from your work directory on local  
+    __D__ = Previewing Enterprise site from your work directory on local  
 
 
-Now that you have your local and remote mkdocs site up and running it is time to clone the AXA master site and once the cloning is complteted the files are to be copied into your work directory from the cloned directory. 
+Now that you have your local and remote mkdocs site up and running it is time to clone the Enterprise master site and once the cloning is complteted the files are to be copied into your work directory from the cloned directory. 
 
 ## Cloning the Repository on local   
 
@@ -31,7 +31,7 @@ Open the "Git Bash" by pressing the keyboard keys "Windows (or Windows+R) and th
 
  Type `cd` to revert to your home directory.
 
- Type `git clone https://github.kyndryl.net/sre-axa/mkdocs.git` and press the "Enter" key and should see cloning messages as shown below:
+ Type `git clone https://github.com/spnizen/cognitive-automationmkdocs.git` and press the "Enter" key and should see cloning messages as shown below:
 
     Cloning into <repository name>...
     remote: Enumerating objects: 1153, done.
@@ -53,7 +53,7 @@ Open the "Git Bash" by pressing the keyboard keys "Windows (or Windows+R) and th
 
  Type `git commit -m 'A useful message'` and press the "Enter" key to commit the files.
 
-## Previewing AXA site from your work directory on local
+## Previewing Enterprise site from your work directory on local
 
 MkDocs includes a live preview server, so you can preview your changes as you
 write your documentation. The server will automatically rebuild the site upon

@@ -11,13 +11,13 @@ title: Integrated AI Ops (includes KSI)
 | **Dashboard View** | ![aaa](assets/images/AIOpsHomePage0.png) |
 |:-----------------------|:-----------------------|
 | **Benefits** | Gives a complete view of the Account infra status.|
-| **URL** | https://delivery.kyndryl.net/home/#/ |
+| **URL** | https://delivery.enterprise.net/home/#/ |
 | **Frequency** | Daily |
 | **Usage** | Applicable for all Squads |
 
 ## Steps to set view of the incident status fir the last 24hours
 
-### 1. Verify the Kyndryl Delivery Account shows AXA Cloud
+### 1. Verify the Enterprise Delivery Account shows Enterprise Cloud
 
 ### 2. Hover the mouse cursor on P1/P2 Active Incidents to bring the Legend as a Pop-up.
 
@@ -33,7 +33,7 @@ title: Integrated AI Ops (includes KSI)
 | **Dashboard View** | ![aaa](assets/images/101_Dashboard_View.png) |
 |:-----------------------|:-----------------------|
 | **Benefits** | Gives a complete view of the incident status in the last 24hours.|
-| **URL** | https://delivery.kyndryl.net/home/#/ |
+| **URL** | https://delivery.enterprise.net/home/#/ |
 | **Frequency** | Daily |
 | **Usage** | Applicable for all Squads |
 
@@ -43,7 +43,7 @@ title: Integrated AI Ops (includes KSI)
 | **Dashboard View** | ![aaa](assets/images/102_Dashboard_View.png) |
 |:-----------------------|:-----------------------|
 | **Benefits** | Gives a complete view of the incident status in the last 24hours.|
-| **URL** | https://delivery.kyndryl.net/home/#/ |
+| **URL** | https://delivery.enterprise.net/home/#/ |
 | **Frequency** | Daily |
 | **Usage** | Applicable for all Squads |
 
@@ -53,7 +53,7 @@ title: Integrated AI Ops (includes KSI)
 | **Dashboard View** | ![aaa](assets/images/102_Dashboard_View.png) |
 |:-----------------------|:-----------------------|
 | **Benefits** | Gives a complete view of the incident status in the last 24hours.|
-| **URL** | https://delivery.kyndryl.net/home/#/ |
+| **URL** | https://delivery.enterprise.net/home/#/ |
 | **Frequency** | Daily |
 | **Usage** | Applicable for all Squads |
 
@@ -63,7 +63,7 @@ title: Integrated AI Ops (includes KSI)
 | **Dashboard View** | ![aaa](assets/images/102_Dashboard_View.png) |
 |:-----------------------|:-----------------------|
 | **Benefits** | Gives a complete view of the incident status in the last 24hours.|
-| **URL** | https://delivery.kyndryl.net/home/#/ |
+| **URL** | https://delivery.enterprise.net/home/#/ |
 | **Frequency** | Daily |
 | **Usage** | Applicable for all Squads |
 
@@ -73,7 +73,7 @@ title: Integrated AI Ops (includes KSI)
 | **Dashboard View** | ![aaa](assets/images/102_Dashboard_View.png) |
 |:-----------------------|:-----------------------|
 | **Benefits** | Gives a complete view of the incident status in the last 24hours.|
-| **URL** | https://delivery.kyndryl.net/home/#/ |
+| **URL** | https://delivery.enterprise.net/home/#/ |
 | **Frequency** | Daily |
 | **Usage** | Applicable for all Squads |
 

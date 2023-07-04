@@ -3,11 +3,11 @@ template: overrides/main.html
 title: CoreIT CM Overview
 ---
 
-# <b>AXA Change Management</b>
+# <b>Enterprise Change Management</b>
 ## <b>1 Change Managemet</b>
 
-This section of the AXA / Kyndryl Process Interface Manual provides customer interfaces for requesting and obtaining in-scope services pursuant to the Master Services Agreement with Kyndryl. Nothing contained in this document is intended to amend the terms and conditions of the Agreement, and in the event of a conflict, the Agreement takes precedence.
-This document is intended to be used by both AXA and KYNDRYL personnel responsible for providing the required services.
+This section of the Enterprise / Enterprise Process Interface Manual provides customer interfaces for requesting and obtaining in-scope services pursuant to the Master Services Agreement with Enterprise. Nothing contained in this document is intended to amend the terms and conditions of the Agreement, and in the event of a conflict, the Agreement takes precedence.
+This document is intended to be used by both Enterprise and KYNDRYL personnel responsible for providing the required services.
 
 ## <b>1.1 Description </b>
 
@@ -23,8 +23,8 @@ Following is the scope of Change:
   - Deployment Management is used for: 
       1.  system and applications supported by KYNDRYL.  
       2.	Infrastructure environments. 
-      3.	Upgrade (Windows SP / AIX TL…): Deploy new image in production after AXA validation.
-      4.	Migration (New Operating System Version): Deploy new image provided by AXA.
+      3.	Upgrade (Windows SP / AIX TL…): Deploy new image in production after Enterprise validation.
+      4.	Migration (New Operating System Version): Deploy new image provided by Enterprise.
 
 
 
@@ -32,7 +32,7 @@ Following is the scope of Change:
 
 ??? info "Change Management RACI"
 
-    |Key Activities| Kyndryl | AXA|
+    |Key Activities| Enterprise | Enterprise|
     | :--------- |:-----------| :----------|
     |Change Planning when change is required|R,A,C,I|C,I|
     |Assess for Business Impact|R,A,C,I|C,I|
@@ -95,12 +95,12 @@ The Change Manager ensures that the Change Management process is executed and is
         flowchart TD;
 
         S((Start))==>X
-        X([Request for change using the regional template - Change owner]) ==> A[Review the Risk& impact, Schedule - Kyndryl CM];
-        B[Notify swivel chair to Create Silva change  and Assign to correct assignment group - Change Owner] ==> C[Validate Silva change and get Silva change updated -Kyndryl CM];
+        X([Request for change using the regional template - Change owner]) ==> A[Review the Risk& impact, Schedule - Enterprise CM];
+        B[Notify swivel chair to Create Silva change  and Assign to correct assignment group - Change Owner] ==> C[Validate Silva change and get Silva change updated -Enterprise CM];
         A ==> B;
-        D[Send email AXA local point of contact - Kyndryl CM] ==> E[AXA POC to present change in AXA regional CAB];
+        D[Send email Enterprise local point of contact - Enterprise CM] ==> E[Enterprise POC to present change in Enterprise regional CAB];
         C ==> D;
-        F[AXA POC to provide update on CAB decision] ==> G{Approved} ==> |Yes| G1[Attach approval artifact to Snow - Kyndryl CM];
+        F[Enterprise POC to provide update on CAB decision] ==> G{Approved} ==> |Yes| G1[Attach approval artifact to Snow - Enterprise CM];
         G ==> |No| G2[Provide required info - Change owner]
         E ==> F;
         G2 ==>D;
@@ -108,7 +108,7 @@ The Change Manager ensures that the Change Management process is executed and is
         J[Conduct the PIR and close the change] ==> K[Notify swivel chair to add the closure comment in Silva - Change owner];
         G1 ==> H;
         I ==> J;
-        Y([AXA POC close the change in Silva])
+        Y([Enterprise POC close the change in Silva])
         K ==> Y ==> T((End))
 
 
@@ -133,30 +133,30 @@ The Change Manager ensures that the Change Management process is executed and is
     
 
 
-## <b>1.7	AXA Point of Contact (POC) :</b>
+## <b>1.7	Enterprise Point of Contact (POC) :</b>
 
 ??? info "<b>Point of Contact for BaaS (Backup as a Service) : </b>"
    
     |Region  |Name |Email ID |
     | :------------ | :-------------| :-------------|
     |**ASIA**|CG Backup Team|atss_in_dl_backup.ops.in@capgemini.com|
-    |**Middle Europe**|Steve Sloman|steve.sloman@axa.com|
-    |**North America**|Noe Jonathan Rembrandt, HERNANDEZ MARQUEZ Gustavo,Jose Carlos|noerembrandt.velazquez@axa.com, gustavo.hernandez@axa.com, JoseCarlos.Patron@axa.com|
-    |**North Europe**|Philip Weets|philip.weets.external@axa.com|
-    |**South Europe**|Steve Sloman|steve.sloman@axa.com|
+    |**Middle Europe**|Steve Sloman|steve.sloman@sre.com|
+    |**North America**|Noe Jonathan Rembrandt, HERNANDEZ MARQUEZ Gustavo,Jose Carlos|noerembrandt.velazquez@sre.com, gustavo.hernandez@sre.com, JoseCarlos.Patron@sre.com|
+    |**North Europe**|Philip Weets|philip.weets.external@sre.com|
+    |**South Europe**|Steve Sloman|steve.sloman@sre.com|
 
 ??? info "<b>Point of Contact for BufferIT  & StoaaS (Storage as a Service ) : </b>"
 
     |Region| Name| Email ID|
     | :------------ | :-------------| :-------------|
-    |**ASIA**|Joel Choong, Michael Palmares|joel.choong@axa.com , michael.palmares@axa.com|
-    |**ME**|Tom Whaley, Robert Kovac, Alfonso Santamaria|tom.whaley.external@axa.com ,robert.kovac@axa.com , alfonso.santamaria.external@axa.com|
-    |**NE**|Wim|wim.backx@axa.com|
-    |**SE**|David Gamar, Assana Diawara|david.gamard@axa.com , assana.diawara.uniware@axa.com|
+    |**ASIA**|Joel Choong, Michael Palmares|joel.choong@sre.com , michael.palmares@sre.com|
+    |**ME**|Tom Whaley, Robert Kovac, Alfonso Santamaria|tom.whaley.external@sre.com ,robert.kovac@sre.com , alfonso.santamaria.external@sre.com|
+    |**NE**|Wim|wim.backx@sre.com|
+    |**SE**|David Gamar, Assana Diawara|david.gamard@sre.com , assana.diawara.uniware@sre.com|
 
-??? info "<b>SDM and Over PoC AXA : </b>"  
+??? info "<b>SDM and Over PoC Enterprise : </b>"  
 
-    |Business Service|Kyndryl SDM|AXA Overall PoC|
+    |Business Service|Enterprise SDM|Enterprise Overall PoC|
     | :----------| :-----------| :--------------|
     |**BaaS**| Suneetha shreejith, RAJESH PILLAI| Philip Weets, Francis Hufkens|
     |**BufferIT**| Suneetha shreejith, RAJESH PILLAI| Guido Engel|

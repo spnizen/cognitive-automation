@@ -16,7 +16,7 @@ Check the following files exist in OS
 Check the following File exist with soft link
 - ls -ltr /opt/tivoli/tsm/client/api/bin64/dsm.sys
 - ls -ltr /opt/tivoli/tsm/client/api/bin64/dsm.opt
-Action: If any of the file not available reach Kyndryl team for help 
+Action: If any of the file not available reach Enterprise team for help 
 
 ** Communication:
 Once the Files are exist with proper permissions then use following commands to validate the communication.
@@ -26,13 +26,13 @@ Once the Files are exist with proper permissions then use following commands to 
 - cd /opt/tivoli/tsm/client/oracle/bin64
 - tdpoconf showenv -tdpo_optfile=tdpo.opt
 
-Action: If any of this prompt for password, then check with Kyndryl team for password then execute below commands
+Action: If any of this prompt for password, then check with Enterprise team for password then execute below commands
 
 - dsmc -optfile= /opt/tivoli/tsm/client/ba/bin/dsm.sys
 - dsmc -optfile= /opt/tivoli/tsm/client/api/bin64/dsm.sys
 
 here, Let the ID be blank just put enter. 
-In place of password use the pass shared by kyndryl team.
+In place of password use the pass shared by enterprise team.
 Then run below command and type same password three times one by one followed with enter.
 
 - cd /opt/tivoli/tsm/client/oracle/bin64

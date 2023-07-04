@@ -48,7 +48,7 @@ Note that the usage data is based on global browser market share, so it could
 in fact be entirely different for your target demographic. It's a good idea to
 check the distribution of browser types and versions among your users.
 
-  [open an issue]: https://github.kyndryl.net/sre-axa/steady-state-tasks/issues/new/choose
+  [open an issue]: https://github.com/spnizen/cognitive-automationsteady-state-tasks/issues/new/choose
   [caniuse.com]: https://caniuse.com/
   [:is pseudo selector]: https://caniuse.com/css-matches-pseudo
 
@@ -68,4 +68,4 @@ the following older browser versions might work with some additional effort:
   Material for MkDocs to support Internet Explorer is
   [:octicons-tag-24: 4.6.3][IE support].
 
-  [IE support]: https://github.kyndryl.net/sre-axa/steady-state-tasks/releases/tag/4.6.3
+  [IE support]: https://github.com/spnizen/cognitive-automationsteady-state-tasks/releases/tag/4.6.3

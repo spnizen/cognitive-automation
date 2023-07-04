@@ -53,8 +53,8 @@ hide:
         NI --> SR2{Is P2};
         NI --> SR3{Is P3};
         NI --> SR4{Is P4};
-        SR1 -->|Yes| IAXA{Inform AXA};
-        SR2 -->|Yes| IAXA{Inform AXA};  
+        SR1 -->|Yes| IEnterprise{Inform Enterprise};
+        SR2 -->|Yes| IEnterprise{Inform Enterprise};  
         SR3 -->|Yes| SNKB;
         SR4 -->|Yes| SNKB;
         RIIG --> IN1[/Squads/SREs Notified/];
@@ -71,8 +71,8 @@ hide:
         RRFPMR -->|Yes| FD;
         RRFPMR -->|No| USMT[Update SM];
         USMT --> OC;
-        IAXA -->|Yes| SEN[/Send Email Notfication/];
-        IAXA --> SMTGS[/Schedule Meetings/];
+        IEnterprise -->|Yes| SEN[/Send Email Notfication/];
+        IEnterprise --> SMTGS[/Schedule Meetings/];
         SEN --> E;
         SMTGS --> E;
     ``` 

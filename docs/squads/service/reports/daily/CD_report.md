@@ -22,12 +22,12 @@ title: SM Overview
             File Name - CORE IT Backup Daily Report XX Month YYYY(New) - Update the date for date for which report is prepared
 
      <span style="color: blue;"><b><i>Step 2:</b></span></i>
-       Share point link for automated report:  https://kyndryl.sharepoint.com/sites/AXAReportdelivery/SitePages/ProjectHome.aspx
+       Share point link for automated report:  https://enterprise.sharepoint.com/sites/EnterpriseReportdelivery/SitePages/ProjectHome.aspx
        ![CACF](images/bck.png)
 
      <span style="color: blue;"><b><i>Step 3:</b></span></i>
        Path to download the automated report
-       <p> AXA Report delivery > AXAREPORTDELIVERY>COREIT>REPORTS>BACKUP</p>
+       <p> Enterprise Report delivery > EnterpriseREPORTDELIVERY>COREIT>REPORTS>BACKUP</p>
  
      <span style="color: blue;"><b><i>Step 4:</b></span></i>
        We should use N-1 report e.g if we are preparing report for 4th Aug – should use automated report of 3rd Aug.
@@ -60,9 +60,9 @@ title: SM Overview
      <span style="color: blue;"><b><i>Step 12:</b></span></i>
         Once the report is ready send email to the following email ID’s
 
-       In To : SUNITHA SREEJITH <Sunitha.Sreejith@kyndryl.com>; Suma Maraiah <Suma.Maraiah@kyndryl.com>; Abbas Ali R Abbas.Ali.R@kyndryl.com
+       In To : SUNITHA SREEJITH <Sunitha.Sreejith@enterprise.com>; Suma Maraiah <Suma.Maraiah@enterprise.com>; Abbas Ali R Abbas.Ali.R@enterprise.com
 
-       In  CC : AXA_Backup <axa_backup@kyndryl.com>; RAJESH PILLAI <Rajesh.Pillai@kyndryl.com>; Kalli Reddy <Kalli.Reddy@kyndryl.com>; SANJU PHILIP <Sanju.Philip@kyndryl.com>; ANITHA KODIGEMAKKI <Anitha.Kodigemakki@kyndryl.com>; Dinesh Pandey <Dinesh.Pandey@kyndryl.com>; Shruthi Thimmareddygari <Shruthi.Thimmareddygari@kyndryl.com>; Abhishek Anand <Abhishek.Anand@kyndryl.com>; Raghav Nayak <Raghav.Nayak@kyndryl.com>; AXA-SAMs AXA-SAMs@Kyndryl.com
+       In  CC : Enterprise_Backup <sre_backup@enterprise.com>; RAJESH PILLAI <Rajesh.Pillai@enterprise.com>; Kalli Reddy <Kalli.Reddy@enterprise.com>; SANJU PHILIP <Sanju.Philip@enterprise.com>; ANITHA KODIGEMAKKI <Anitha.Kodigemakki@enterprise.com>; Dinesh Pandey <Dinesh.Pandey@enterprise.com>; Shruthi Thimmareddygari <Shruthi.Thimmareddygari@enterprise.com>; Abhishek Anand <Abhishek.Anand@enterprise.com>; Raghav Nayak <Raghav.Nayak@enterprise.com>; Enterprise-SAMs Enterprise-SAMs@Enterprise.com
 
        <span style="color: blue;"><b>Note</b></span></i>: Report for Monday should be consolidated report of 3days (Friday, Saturday &Sunday ) e.g if we are publishing the report for  1st Aug report should consolidated of 29th Jul30th Jul & 31st Jul 
 

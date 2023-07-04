@@ -13,14 +13,14 @@ title: Getting started with ServiceNow Tools
 
   ![ServiceNow Register](assets/images/SNow-Signup2.png)
 
-1.3 Use your Kyndryl enterprise email id, provide the other necessary details as as Name, Country and password. 
+1.3 Use your Enterprise enterprise email id, provide the other necessary details as as Name, Country and password. 
 
 1.4 Click on th button:'Sign Up' and this should display the registration confirmation message as shown below.
 
   ![ServiceNow Register](assets/images/SNow-Signup3.png)
 
 ## 2. Verify your ServiceNow ID!
-2.1 Login to your Kyndryl enterprise email and look for the email with sbuject:'Verify your ServiceNow ID!' 
+2.1 Login to your Enterprise enterprise email and look for the email with sbuject:'Verify your ServiceNow ID!' 
 
   ![ServiceNow Register](assets/images/SNow-EmailVerification.png)
 
@@ -34,7 +34,7 @@ title: Getting started with ServiceNow Tools
 
   ![ServiceNow Register](assets/images/SNow-Login.png)
 
-Enter your Kyndryl email id and click on the button:'Next' and this will prompt to enter your password. 
+Enter your Enterprise email id and click on the button:'Next' and this will prompt to enter your password. 
 
 Enter the password and click on the button:'Sign In' and once authenticated successfully the below Welcome page will be displayed.
 
@@ -72,7 +72,7 @@ Password: <the one which as provided/copied/last updated>
 
   ![ServiceNow Register](assets/images/SNow-LoginPage2.png)
 
-Enter your Kyndryl email id and click on the button:'Next' and this will prompt to enter your password. 
+Enter your Enterprise email id and click on the button:'Next' and this will prompt to enter your password. 
 
 Enter the password and click on the button:'Sign In' and once authenticated successfully the below Welcome page will be displayed.
 
