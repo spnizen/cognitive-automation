@@ -178,13 +178,13 @@ nav:
         - Reports:
             - Daily:
                 -  PIAAS: squads/service/reports/daily/PD_report.md
-                -  CoreIT: squads/service/reports/daily/CD_report.md
+                -  InfraIT: squads/service/reports/daily/CD_report.md
             - Weekly: 
                 - PIAAS: squads/service/reports/weekly/PW_report.md
-                - CoreIT: squads/service/reports/weekly/CW_report.md
+                - InfraIT: squads/service/reports/weekly/CW_report.md
             - Monthly: 
                 - PIAAS: squads/service/reports/monthly/PM_report.md
-                - CoreIT: squads/service/reports/monthly/CM_report.md   
+                - InfraIT: squads/service/reports/monthly/CM_report.md   
     - CPS: 
         - Overivew: squads/cps/overview.md
         - Architecture: squads/cps/architecture.md

@@ -1,6 +1,6 @@
 ---
 template: overrides/main.html
-title: CoreIT CM Overview
+title: InfraIT CM Overview
 ---
 
 # <b>Enterprise Change Management</b>

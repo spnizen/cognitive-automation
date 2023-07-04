@@ -3,7 +3,7 @@ template: overrides/main.html
 title: Weekly Reporting Overview
 ---
 
-# CoreIT Weekly Reports
+# InfraIT Weekly Reports
 ## List of Reports
 
 

@@ -3,7 +3,7 @@ template: overrides/main.html
 title: IM Overview
 ---
 #   <b>Enterprise Incident Management</b>
-##  CoreIT - Incident Management Overview
+##  InfraIT - Incident Management Overview
 ## 1. Enterprise impacted MI process
   
 ``` mermaid
@@ -213,7 +213,7 @@ The Service Availability manager / Duty Manager role is responsible for managing
 ??? "Final Communication"
     ![CACF](../service/assets/images/mitemplate2.png)
 
-## 7. CoreIT Governance
+## 7. InfraIT Governance
 |Primary contacts|Name|Email|Phone|
 |:-------------:|:----:|:---------:|:----------:|
 |  |Yoann Walther|yoann.walther@sre.com <p>BUFFER IT (Product Owner)</p>|+33 6 47 02 00 34|

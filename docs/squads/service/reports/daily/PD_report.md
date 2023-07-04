@@ -33,7 +33,7 @@ title: Daily Reporting Overview
    * Cloud Infra Availability Report
    * Hotspots for each region covered by respective regional SDM
    * On call Rota (Enterprise and Enterprise).
-   Sample of the HC report- which covers both for PiaaS and CoreIT
+   Sample of the HC report- which covers both for PiaaS and InfraIT
 ???+ "Screenshot of the report"
      ![CACF](images/hc.png)
      ![CACF](images/hc1.png)
@@ -214,7 +214,7 @@ title: Daily Reporting Overview
 ???+ "Steps to create the report"
 
       <span style="color: blue;"><b><i>Step 1:</b></span></i>
-         Working report Name - PIaaS_I2BCK_DLY_audit_logs - VM and DB View DD-Month– Update the date for which report is prepared
+         Working report Name - Infra_I2BCK_DLY_audit_logs - VM and DB View DD-Month– Update the date for which report is prepared
 
       <span style="color: blue;"><b><i>Step 2:</b></span></i>
          Share point link for automated report:  https://enterprise.sharepoint.com/sites/EnterpriseReportdelivery/SitePages/ProjectHome.aspx
@@ -309,7 +309,7 @@ title: Daily Reporting Overview
       <span style="color: blue;"><b><i>Step 24:</b></span></i>
          For DB data. In Working Sheet D Colum “Today” in ME DB View we’ll have to put a formula. 
          =VLOOKUP(Select A2 ,in automated report select data from B to J,9,0)
-         Sample formula =VLOOKUP([@[Filespace Name]],'[ME_PIaaS_Operational_I2BCK_DLY_audit_logs_2022-08-01.xlsx]SLA'!$B:$J,9,0)
+         Sample formula =VLOOKUP([@[Filespace Name]],'[ME_Infra_Operational_I2BCK_DLY_audit_logs_2022-08-01.xlsx]SLA'!$B:$J,9,0)
          ![CACF](images/i2b19.png)
          ![CACF](images/i2b20.png)
 
@@ -325,7 +325,7 @@ title: Daily Reporting Overview
          For VM data. In Working Sheet D Colum “Today” in VM View we’ll have to put a formula. 
          <p>=VLOOKUP(Select A2 ,in automated report select data from D to J,7,0)</p>
          Sample formula
-         <p>=VLOOKUP([@[Filespace Name]],'[ME_PIaaS_Operational_I2BCK_DLY_audit_logs_2022-08-01.xlsx]SLA'!$D:$J,7,0))</p>
+         <p>=VLOOKUP([@[Filespace Name]],'[ME_Infra_Operational_I2BCK_DLY_audit_logs_2022-08-01.xlsx]SLA'!$D:$J,7,0))</p>
 
       <span style="color: blue;"><b><i>Step 28:</b></span></i>
          Apply filter and Select Replication successful. In “S” column mention “OK “  if we have any Replication failed values select that from the filter and & mention “S” Colum. For N/A values we should leave that blank in “S” Colum. Once we fill the data in S Colum. Delete the data from D column.

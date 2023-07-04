@@ -3,18 +3,18 @@ template: overrides/main.html
 title: SM Overview
 ---
 
-# CoreIT Daily Reports
+# InfraIT Daily Reports
 ## List of Reports
 
 
 |Sl. No. |Report Name |Report Usage|Duration|Manual or Automated|Report Owner|
 |:----------- | :--------- | :-------------| :------------- | :------------| :------------- |
-|1 | [CoreIT Backup](#CoreIT Backup) |External | 20m | Automated | SAM |
+|1 | [InfraIT Backup](#InfraIT Backup) |External | 20m | Automated | SAM |
 |3| [2nd copy Taskforce](#2nd copy Taskforce)|External|45m|Manual|Abbas|
 |4| [I2BCK SLA/SLO(2nd Copy Replication)](#I2BCK SLA/SLO)|External|1.5H|Manual|Abbas|
 
 
-## 1. CoreIT Backup Report<a name="CoreIT Backup"></a>
+## 1. InfraIT Backup Report<a name="InfraIT Backup"></a>
 
 ???+ "Steps to create the report"
 

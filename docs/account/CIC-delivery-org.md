@@ -17,7 +17,7 @@ title: Overview
 
 #### Chief Architect (Global)
 
-#### Delivery Project Executive (PIaaS & CoreIT)
+#### Delivery Project Executive (Infra & InfraIT)
 
 #### Delivery Project Executive (Build & Engineering)
 

@@ -3,13 +3,13 @@ template: overrides/main.html
 title: Monthly Reporting Overview
 ---
 
-# CoreIT Monthly Reports
+# InfraIT Monthly Reports
 ## List of Reports
 
 
 |Sl. No. |Report Name |Report Usage|Duration|Manual or Automated|Report Owner|
 |:----------- | :--------- | :-------------| :------------- | :------------| :------------- |
-|1|[CoreIT Billing](#corebill) |External | 50H | Manual | Suma|
+|1|[InfraIT Billing](#corebill) |External | 50H | Manual | Suma|
 |2|[Core IT Stoaas Summary report](#stoaas)|External| 2H | Manual | Suma |
 |3|[RPBIL04](#rpb) | External | 30m | Automated | Suma |
 |4|[Storage as a Service infrastructure availability](#storage) | External | 30m | Manual | Abbas |
@@ -25,7 +25,7 @@ title: Monthly Reporting Overview
 |14|[Service Request Core IT (Silva)](#service) | External | 1H | Manual | Abbas |
 
 
-## 1. CoreIT Billing<a name="corebill"></a>
+## 1. InfraIT Billing<a name="corebill"></a>
 ## 2. Core IT Stoaas Summary report<a name="stoaas"></a>
 ## 3. RPBIL04<a name="rpb"></a>
 ## 4. Storage as a Service infrastructure availability<a name="storage"></a>

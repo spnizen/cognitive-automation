@@ -183,7 +183,7 @@ title: Enterprise 8 Tools for Enterprise
 
 ???+ info "Monitoring and Events Management with ITM6 (Sunset Soon)"
 
-    The IBM Tivoli Monitoring (ITM6) is configured in PIaaS and CoreIT devices to probe for various situations wherein the events/alerts triggered by these devices are captured by the MCMS NetCool Impact System which inturn then creates an Incident(s) in MCMS ServiceNow based on specific configuration setting(s) enabled on the NetCool. Though the events/alerts are captured but the Auto-Remediation correction using the Ansible Playbooks is not enabled or configured yet due to the disconnect in flow between MCMS NetCool Impact and CACF NEXT.
+    The IBM Tivoli Monitoring (ITM6) is configured in Infra and InfraIT devices to probe for various situations wherein the events/alerts triggered by these devices are captured by the MCMS NetCool Impact System which inturn then creates an Incident(s) in MCMS ServiceNow based on specific configuration setting(s) enabled on the NetCool. Though the events/alerts are captured but the Auto-Remediation correction using the Ansible Playbooks is not enabled or configured yet due to the disconnect in flow between MCMS NetCool Impact and CACF NEXT.
 
       ``` mermaid
           flowchart LR
@@ -197,7 +197,7 @@ title: Enterprise 8 Tools for Enterprise
       ```     
 ??? info "Monitoring and Events as a Service with ScienceLogic (On-Going)"
 
-     In M&EaaS the IBM Tivoli Monitoring (ITM6) will be replaced with ScienceLogic SaaS tool configured for a PIaaS and CoreIT devices with various collectors delpoyed to proform the probe for various situations.  The events/alerts triggered by the devices are captured by the SL1 Collector and sent to Europe NetCool Impact System which inturn then creates an Incident(s) in Europe ServiceNow Instance Automation Queue as Auto-Remediation is configured the corretive action is executed using the Ansible Playbooks implemented in the CACF+CACF NEXT Component.
+     In M&EaaS the IBM Tivoli Monitoring (ITM6) will be replaced with ScienceLogic SaaS tool configured for a Infra and InfraIT devices with various collectors delpoyed to proform the probe for various situations.  The events/alerts triggered by the devices are captured by the SL1 Collector and sent to Europe NetCool Impact System which inturn then creates an Incident(s) in Europe ServiceNow Instance Automation Queue as Auto-Remediation is configured the corretive action is executed using the Ansible Playbooks implemented in the CACF+CACF NEXT Component.
 
       ``` mermaid
       graph LR
