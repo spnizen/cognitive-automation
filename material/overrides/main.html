@@ -6,7 +6,19 @@
   <link rel="stylesheet" href="{{ 'overrides/assets/stylesheets/main.82a244a8.min.css' | url }}">
 {% endblock %}
 {% block announce %}  
-
+<script>
+  window.watsonAssistantChatOptions = {
+    integrationID: "77a64231-2748-48fe-b339-97a4091f031f", // The ID of this integration.
+    region: "eu-gb", // The region your integration is hosted in.
+    serviceInstanceID: "dad3e8c2-26c7-4520-9d58-877c2d5dff64", // The ID of your service instance.
+    onLoad: function(instance) { instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
+</script>  
 {% endblock %}
 {% block content %}
   {% include "overrides/partials/content.html" %}
