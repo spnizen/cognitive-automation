@@ -2,14 +2,9 @@
   This file was automatically generated - do not edit
 -#}
 {% if page.edit_url %}
-  {% set edit = "https://github.enterprise.com/Enterprise-SRE/Steady-State-Support/edit" %}
+  {% set edit = "https://github.com/spnizen/cognitive-automation/edit" %}
   {% set view = "https://raw.githubusercontent.com/sridharpnaidu/mkdocs-material" %}
-  <a href="{{ page.edit_url }}" title="{{ lang.t('edit.link.title') }}" class="md-content__button md-icon">
-    {% include ".icons/material/file-edit-outline.svg" %}
-  </a>
-  <a href="{{ page.edit_url | replace(edit, view) }}" title="View source of this page" class="md-content__button md-icon">
-    {% include ".icons/material/file-eye-outline.svg" %}
-  </a>
+
 {% endif %}
 {% if "tags" in config.plugins %}
   {% include "partials/tags.html" %}
