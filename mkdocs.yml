@@ -72,13 +72,13 @@ theme:
     # - toc.integrate
   palette:
     - scheme: default
-      primary: yellow
-      accent: green
+      primary: green
+      accent: indigo
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
     - scheme: slate
-      primary: orange
+      primary: violet
       accent: indigo
       toggle:
         icon: material/brightness-4
@@ -129,7 +129,7 @@ markdown_extensions:
   - pymdownx.caret
   - pymdownx.details
   - pymdownx.emoji:
-#    emoji_generator: !!python/name:materialx.emoji.to_svg
+#      emoji_generator: !!python/name:materialx.emoji.to_svg
 #      emoji_index: !!python/name:materialx.emoji.twemoji
   - pymdownx.highlight:
       anchor_linenums: true
