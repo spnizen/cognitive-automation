@@ -1,0 +1,33 @@
+{#-
+  This file was automatically generated - do not edit
+-#}
+{% extends "base.html" %}
+{% block extrahead %}
+  <link rel="stylesheet" href="{{ 'overrides/assets/stylesheets/main.82a244a8.min.css' | url }}">
+{% endblock %}
+{% block announce %}  
+    Click to launch >>  
+    <a href="https://delivery.kyndryl.net/" target="intaiops">
+      <strong>  Integrated AI-Ops  </strong>||
+    </a>
+    <a href="https://data.managed-solutions.cloud.ibm.com/dashboards/dashboard/aee28689-f876-4a8e-87b7-4c5a1917f9e8?accountId=delivery" target="sathc">
+      <strong>  SATHC Inventory Dashboard  </strong>||
+    </a>
+    <a href="https://sesdr-status-page-produ-c9745b40761d10b190b65dcf7f727bf8-0000.eu-de.containers.appdomain.cloud/hardware" target="sesdr">
+      <strong>  SESDR Dashboard  </strong>||
+    </a>
+    <a href="https://dev.azure.com/Kyndryl-EMEA/AXA%20Cloud/_workitems/recentlyupdated/" target="ado">
+      <strong>  Azure DevOps  </strong>||
+    </a>
+    <a href="https://tasks.office.com/kyndryl.com/en-US/Home/Planner#/plantaskboard?groupId=ab571503-4d14-4e45-b080-429a35430224&planId=y8zeLpsvtEmn-GUps-ZmNmUAGpji" target="ado">
+      <strong>  MS Planner  </strong>||
+    </a>
+
+{% endblock %}
+{% block content %}
+  {% include "overrides/partials/content.html" %}
+{% endblock %}
+{% block scripts %}
+  {{ super() }}
+  <script src="{{ 'overrides/assets/javascripts/bundle.1ff6d521.min.js' | url }}"></script>
+{% endblock %}
