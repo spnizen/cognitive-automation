@@ -1,1 +1,0 @@
-Single Funnel of Work 
