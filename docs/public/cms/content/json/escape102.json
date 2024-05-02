@@ -1,0 +1,125 @@
+{
+  "Article_id": "",
+  "Article_name": "",
+  "intro": "",
+  "images": [
+    {
+      "thumbnail": "001",
+      "iuri": "image0001.jpg",
+      "title": "",
+      "description": "The role of a Service Availability Manager is to ensure that all IT services are available and performing as expected for an organization. This includes monitoring, managing, and improving the availability, reliability, and performance of IT services to meet the needs of the business.",
+      "instructor_content": "",
+      "vuri": "ES_P0001.mov",
+      "duration": 0.1
+    },
+    {
+      "thumbnail": "002",
+      "iuri": "image0001.jpg",
+      "title": "",
+      "description": "The following is a detailed job description of a Service Availability Manager, including their main tasks and responsibilities:",
+      "instructor_content": "",
+      "vuri": "ES_P0001.mov",
+      "duration": 0.1
+    },
+    {
+      "thumbnail": "003",
+      "iuri": "image0001.jpg",
+      "title": "",
+      "description": "1. Monitor IT Services: The Service Availability Manager is responsible for continuously monitoring the availability and performance of all IT services. This includes using tools and techniques to gather data and metrics on service availability and identifying any potential issues or outages.",
+      "instructor_content": "",
+      "vuri": "ES_P0001.mov",
+      "duration": 0.1
+    },
+    {
+      "thumbnail": "004",
+      "iuri": "image0001.jpg",
+      "title": "",
+      "description": "2. Analyze Service Availability Data: The Service Availability Manager is responsible for analyzing data collected from service monitoring to identify trends, patterns, and potential areas for improvement. This analysis helps in proactive identification and resolution of potential issues, which helps in preventing future disruptions.",
+      "instructor_content": "",
+      "vuri": "ES_P0001.mov",
+      "duration": 0.1
+    },
+    {
+      "thumbnail": "005",
+      "iuri": "image0001.jpg",
+      "title": "",
+      "description": "3. Identify and Report on Availability Issues: The Service Availability Manager is responsible for identifying and reporting on any issues related to service availability to relevant stakeholders. This includes analyzing the impact of these issues and providing recommendations for resolution.",
+      "instructor_content": "",
+      "vuri": "ES_P0001.mov",
+      "duration": 0.1
+    },
+    {
+      "thumbnail": "006",
+      "iuri": "image0001.jpg",
+      "title": "",
+      "description": "4. Respond to and Manage Service Incidents: The Service Availability Manager plays a key role in responding to and managing service incidents, such as outages or disruptions. They work closely with the Incident Management team to coordinate and communicate with stakeholders, escalate issues as needed, and ensure timely resolution of incidents.",
+      "instructor_content": "",
+      "vuri": "ES_P0001.mov",
+      "duration": 0.1
+    },
+    {
+      "thumbnail": "007",
+      "iuri": "image0001.jpg",
+      "title": "",
+      "description": "5. Develop and Maintain Service Availability Plan: The Service Availability Manager is responsible for creating and maintaining a service availability plan that outlines processes and procedures for managing availability and ensuring consistent service levels. This plan includes measures for proactive monitoring, responding to incidents, and continuous improvement.",
+      "instructor_content": "",
+      "vuri": "ES_P0001.mov",
+      "duration": 0.1
+    },
+    {
+      "thumbnail": "008",
+      "iuri": "image0001.jpg",
+      "title": "",
+      "description": "6. Collaborate with other IT Teams: The Service Availability Manager works closely with other IT teams, such as Infrastructure, Network, and Application teams, to ensure alignment and coordination in maintaining service availability. They also collaborate on problem management and root cause analysis efforts to prevent future incidents.",
+      "instructor_content": "",
+      "vuri": "ES_P0001.mov",
+      "duration": 0.1
+    },
+    {
+      "thumbnail": "009",
+      "iuri": "image0001.jpg",
+      "title": "",
+      "description": "7. Participate in Change Management: As changes to IT systems can have an impact on service availability, the Service Availability Manager plays a crucial role in the Change Management process. They review and assess the impact of proposed changes on service availability and provide recommendations on how to mitigate any potential risks.",
+      "instructor_content": "",
+      "vuri": "ES_P0001.mov",
+      "duration": 0.1
+    },
+    {
+      "thumbnail": "010",
+      "iuri": "image0001.jpg",
+      "title": "",
+      "description": "8. Continuously Improve Service Availability: The Service Availability Manager is responsible for constantly seeking opportunities to improve the availability, reliability, and performance of IT services. This includes implementing new tools and processes, defining and monitoring key performance indicators, and conducting reviews and audits.",
+      "instructor_content": "",
+      "vuri": "ES_P0001.mov",
+      "duration": 0.1
+    },
+    {
+      "thumbnail": "011",
+      "iuri": "image0001.jpg",
+      "title": "",
+      "description": "9. Communicate with Stakeholders: The Service Availability Manager is responsible for communicating with relevant stakeholders, such as business owners, customers, and senior management, on service availability and performance. They provide regular updates, reports, and recommendations for improvement to ensure a shared understanding of service availability.",
+      "instructor_content": "",
+      "vuri": "ES_P0001.mov",
+      "duration": 0.1
+    },
+    {
+      "thumbnail": "012",
+      "iuri": "image0001.jpg",
+      "title": "",
+      "description": "10. Stay Updated on Industry Trends: The Service Availability Manager is responsible for staying updated on industry trends, best practices, and emerging technologies related to service availability management. They use this knowledge to improve processes and tools and ensure that the organization's IT services meet industry standards.",
+      "instructor_content": "",
+      "vuri": "ES_P0001.mov",
+      "duration": 0.1
+    },
+    {
+      "thumbnail": "013",
+      "iuri": "image0001.jpg",
+      "title": "",
+      "description": "Overall, the Service Availability Manager plays a critical role in maintaining the availability and performance of IT services. They use their expertise and knowledge to ensure that organizations can deliver services efficiently and effectively to meet the needs of their customers and achieve their business objectives.",
+      "instructor_content": "",
+      "vuri": "ES_P0001.mov",
+      "duration": 0.1
+    }
+  ],
+  "outro": ""
+}

@@ -1,0 +1,176 @@
+# Copyright (c) 2016-2022 Martin Donath <martin.donath@squidfunk.com>
+
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to
+# deal in the Software without restriction, including without limitation the
+# rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+# sell copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+
+# The above copyright notice and this permission notice shall be included in
+# all copies or substantial portions of the Software.
+
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+# FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+# IN THE SOFTWARE.
+
+# Project information
+site_name: ExtremeSpartan Cognitive Industries - Deploy Automation as a Service
+site_url: https://extreme-spartan.github.io/cognitive-automation/
+
+site_author: Sridhar P Naidu
+site_description: >-
+  AI Bots Create, Deploy & Execute Automation(s) using Cognitive Conversation(s) and help Enterprise SRE & SME' scale new business requirements while keeping the overall resource cost low
+site_description2: >-
+  Site Reliability Engineering Bootcamp course is designed in a modular way to help Enterprise SRE & SME's to learn at their own pace and on successfully passing the quiz, will qualify for the 'Site Reliability Engineer Bootcamp' Badge.
+
+# Repository
+
+
+# Copyright
+copyright: Copyright &copy; 2016 - 2023 Sridhar P Naidu
+
+# Configuration
+theme:
+  name: null
+  custom_dir: !ENV [THEME_DIR, "material"]
+
+  # Static files
+  static_templates:
+    - 404.html
+
+  # Don't include MkDocs' JavaScript
+  include_search_page: false
+  search_index_only: true
+
+  # Default values, taken from mkdocs_theme.yml
+  language: en
+  features:
+    - content.code.annotate
+    # - content.tabs.link
+    - content.tooltips
+    # - header.autohide
+    # - navigation.expand
+    - navigation.indexes
+    # - navigation.instant
+    # - navigation.prune
+    # - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    # - toc.integrate
+  palette:
+    - scheme: default
+      primary: green
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: violet
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: assets/favicon.png
+  icon:
+    logo: logo
+
+# Plugins
+plugins:
+  - search
+  - redirects:
+      redirect_maps:
+        changelog/insiders.md: insiders/changelog.md
+        conventions.md: philosophy.md
+        reference/abbreviations.md: reference/tooltips.md
+        reference/meta-tags.md: reference/index.md
+        reference/variables.md: https://mkdocs-macros-plugin.readthedocs.io/
+        sponsorship.md: insiders/index.md
+  - minify:
+      minify_html: true
+
+# Customization
+extra:
+  analytics:
+    provider: google
+    property: !ENV GOOGLE_ANALYTICS_KEY
+  social:
+
+# Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+#      emoji_generator: !!python/name:materialx.emoji.to_svg
+#      emoji_index: !!python/name:materialx.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk-sridhar
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Page tree
+nav:
+  - Home: index.md
+  - Executive Summary:
+    - Introduction: introduction.md
+    - Industrywsie Overview: industrywise-overview.md
+    - AI Application Abilities: ai-applications.md
+    - Business Use Cases: business-use-cases.md
+    - Benefits of AI Implementation: benefits-of-ai-implementation.md
+    - Case Studies: case-studies.md
+    - Implementation Strategy: implementation-strategy.md
+    - ROI and Cost Analysis: roi-and-cost-analysis.md
+  - Cognitive AI Automation as a Service Offerings: service-offerings.md
+  - SRE: 
+    - Overview and Status: sre/overview.md
+    - Processes & Guidelines: sre/pag.md
+    - Key Trainings for Squads: key-trainings-for-squads.md
+    - Real vs Cognitive Automated Roles:
+      - Project Manager: botalogue/real_pm.md
+      - Cognitive PM: botalogue/cognitive_pm.md
+      - Service Availability Manager: botalogue/real_sam.md
+      - Cognitive SAM: botalogue/cognitive_sam.md
+
+     

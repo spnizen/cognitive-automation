@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Object Detection and Risk Assessment</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
+</head>
+<body>
+  <h1>F/Object Detection and Risk Assessment</h1>
+
+  <!-- Select camera dropdown -->
+  <div for="cameraSelector">Select Camera:</div>
+  <select id="cameraSelector"></select>
+
+  <!-- Video element for the selected camera -->
+  <video id="selectedCamera" autoplay height="220px"></video>
+
+  <!-- Canvas for drawing detected objects -->
+  <canvas id="canvas1" style="position: relative;"></canvas>
+  <canvas id="canvas2" style="position: relative;"></canvas>
+
+  <!-- Button to save and upload canvas content -->
+  <button id="saveAndUploadBtn">Save and Upload</button>
+  <!-- <button type="button" onclick="init()">Start</button> -->
+  <div id="webcam-container"></div>
+  <div id="label-container"></div>
+  <script>
+    // More API functions here:
+    // https://github.com/googlecreativelab/teachablemachine-community/tree/master/libraries/image
+
+    // the link to your model provided by Teachable Machine export panel
+    // const URL = "https://teachablemachine.withgoogle.com/models/tjxpkn-iG/";
+
+    const URL = "https://teachablemachine.withgoogle.com/models/gu4zsbPdh/";
+
+    // const URL = "./Smoke-Flame-DarkRoom/";
+    
+
+    let model, webcam, labelContainer, maxPredictions;    
+    let modelcc;
+    let cameras = [];
+    let currentCameraIndex = 0;
+    let dFlg = false;
+    let announcementText= '';
+    let detectionTime = '';
+
+    // Load COCO-SSD model for object detection
+    cocoSsd.load().then((loadedModel) => {
+      modelcc = loadedModel;
+      init();
+      // Get available cameras
+      navigator.mediaDevices.enumerateDevices().then((devices) => {
+        cameras = devices.filter(device => device.kind === 'videoinput');
+        setupCameraSelector(cameras);
+        startObjectDetection();
+      });
+    });
+
+    // Function to setup camera selector dropdown
+    function setupCameraSelector(cameras) {
+      const cameraSelector = document.getElementById('cameraSelector');
+
+      cameras.forEach((camera, index) => {
+        const option = document.createElement('option');
+        option.value = index;
+        option.text = `Camera ${index + 1}`;
+        cameraSelector.add(option);
+      });
+
+      cameraSelector.addEventListener('change', () => {
+        currentCameraIndex = parseInt(cameraSelector.value, 10);
+        startObjectDetection();
+      });
+    }
+
+    // Function to get video stream from the selected camera
+    async function getVideoStream(source) {
+      const constraints = { video: { deviceId: cameras[source].deviceId } };
+      return await navigator.mediaDevices.getUserMedia(constraints);
+    }
+
+    // Function to perform object detection on a video frame
+    async function detectObjects(video, modelcc, canvas1, canvas2) {
+      const context = canvas1.getContext('2d');
+      const context2 = canvas2.getContext('2d');
+      // Ensure the video and model are ready
+      if (video.readyState === video.HAVE_ENOUGH_DATA && modelcc && model) {
+        // Draw the current video frame on the canvas
+        context.drawImage(video, 0, 0, canvas1.width, canvas1.height);
+        context2.drawImage(video, 0, 0, canvas2.width, canvas2.height);
+        context2.font = '16px Arial';
+        context2.fillStyle = 'cyan';
+        // Perform object detection on the canvas
+        const predictions = await modelcc.detect(canvas1);
+        const prediction = await model.predict(canvas2);
+        let detectionTimestamps = []; // Array to store timestamps of fire detections
+
+        // alert(JSON.stringify(prediction));    
+        announcementText = "Fire detected. Location is basement storage area. Source Camera number is 1. On-Duty Fire Officers to act as per the steps defined."
+        for (let i = 0; i < maxPredictions; i++) {
+            const classPrediction =
+                prediction[i].className + ": " + prediction[i].probability.toFixed(2);
+            labelContainer.childNodes[i].innerHTML = classPrediction;
+            if (prediction[i].className == 'Flame_1' && prediction[i].probability.toFixed(2) > 0.98 ){
+              if(!dFlg){
+                dFlg= true;
+                detectionTime = new Date().getTime();
+                console.log(`Fire detected at ${new Date()}`);
+                context2.fillText(detectionTime, 15, 5);
+                // Speak the detected fire message
+                speak(announcementText);
+                // announcePeriodically();
+                
+              }              
+              context2.fillText('   ', 15, 25);
+              context2.fillText(prediction[i].probability.toFixed(2), 15, 25);
+              context2.fillText('                      ', 15, 45);
+              context2.fillText('Fire Detected Camera#1', 15, 45);
+
+              // Create a timestamp for the current fire detection
+
+
+            } 
+            // else {
+            //   if(dFlg){
+            //     dFlg= false;
+            //   }
+            // }
+        }
+     
+        // Draw boundaries and labels on the canvas
+        predictions.forEach(prediction => {
+          const [x, y, width, height] = prediction.bbox;
+          context.beginPath();
+          context.rect(x, y, width, height);
+          context.lineWidth = 2;
+          context.strokeStyle = 'cyan';
+          context.fillStyle = 'cyan';
+          context.stroke();
+          context.font = '16px Arial';
+          context.fillText(prediction.class, x+5, y + 15);
+        });
+
+        
+        // Process predictions and perform risk assessment
+        const riskAssessment = assessRisk(predictions);
+
+        // Log risk assessment and details
+        // console.log('Risk Assessment:', riskAssessment);
+        // console.log('Object Details:', predictions);
+      }
+    }
+
+    // Function to announce periodically every 2 minutes
+    function announcePeriodically() {
+        if (dFlg) {
+            let currentTime = new Date().getTime();
+
+            const elapsedTime = (detectionTime - currentTime) / 1000; // in mins
+            if (elapsedTime < 1){
+              announcementText = `Fire detected around ${new Date()} reported by source camera ${currentCameraIndex}`;
+            } else {
+              announcementText = `Fire detected around ${elapsedTime} minutes back.`;
+            }
+            speak(announcementText);
+            setTimeout(() => {
+                announcePeriodically();
+            }, 60000); // Schedule the next repeat announcement after 1 minutes
+        }
+    }    
+    
+    function onFireDetection() {
+    // Your existing condition for detecting fire
+    if (prediction[i].className == 'Flame_1' && prediction[i].probability.toFixed(2) > 0.98) {
+        // Draw text on canvas
+        context2.fillText('   ', 15, 25);
+        context2.fillText(prediction[i].probability.toFixed(2), 15, 25);
+        context2.fillText('             ', 25, 25);
+        context2.fillText('Detected Fire', 25, 25);
+
+        // Create a timestamp for the current fire detection
+        const detectionTime = new Date().getTime();
+        detectionTimestamps.push(detectionTime);
+
+        // Announce the detection with timestamp if it's 120 seconds since the first detection
+        if (shouldAnnounceDetection()) {
+            const elapsedTime = (detectionTime - detectionTimestamps[0]) / 1000; // in seconds
+            speak(`Fire detected ${elapsedTime.toFixed(0)} seconds ago. Repeat announcement every 120 seconds.`);
+        }
+    }
+}
+
+// // Function to perform speech synthesis
+// function speak(message) {
+//     const utterance = new SpeechSynthesisUtterance(message);
+//     window.speechSynthesis.speak(utterance);
+// }
+
+// Function to check if it's time to announce a detection
+function shouldAnnounceDetection() {
+    const currentTime = new Date().getTime();
+    return currentTime - detectionTimestamps[0] >= 120000; // 120,000 milliseconds = 120 seconds
+}    
+    
+    
+    // Function to perform speech synthesis
+    function speak(message) {
+        const utterance = new SpeechSynthesisUtterance(message);
+        window.speechSynthesis.speak(utterance);
+    }   
+    // Function to assess risk based on object detection predictions
+    function assessRisk(predictions) {
+      // Your logic for assessing risk based on the detected objects
+      // You might assign scores to objects and calculate an overall risk level
+      // Adjust this based on your specific use case
+      return 'High Risk';
+    }
+
+    // Function to initiate download of the canvas content as an image
+    function downloadCanvas() {
+      const canvas3 = document.getElementById('canvas1');
+      const canvas4 = document.getElementById('canvas2');
+      const dataUrl = canvas3.toDataURL('image/png');
+      const dataUrl2 = canvas4.toDataURL('image/png');
+      const link = document.createElement('a');
+      link.href = dataUrl;
+      link.download = 'trained_objects_detected.png';
+      link.click();
+      link.href = dataUrl2;
+      link.download = 'curated_objects_detected.png';
+      link.click();
+    }
+
+    // Function to initiate the process of saving and uploading canvas content
+    function saveAndUploadCanvas() {
+      downloadCanvas();
+
+      // Upload the saved image to IBM Cloud Object Storage here
+      // You would need to implement the code to interact with IBM Cloud Object Storage
+    }
+
+    // Function to periodically capture video frames and perform object detection
+    function startObjectDetection() {
+      const video = document.getElementById('selectedCamera');
+      const canvas1 = document.getElementById('canvas1');
+      const canvas2 = document.getElementById('canvas2');
+      // const context = canvas1.getContext('2d');
+      // const context2 = canvas2.getContext('2d');
+
+      // Initialize video stream from the selected camera
+      getVideoStream(currentCameraIndex).then((stream) => {
+        video.srcObject = stream;
+
+        setInterval(() => {
+          detectObjects(video, modelcc, canvas1, canvas2);
+        }, 1000); // Adjust the interval based on your requirements
+      });
+    }
+
+    // Load the image model and setup the webcam
+    async function init() {
+        const modelURL = URL + "model.json";
+        const metadataURL = URL + "metadata.json";
+
+        // load the model and metadata
+        // Refer to tmImage.loadFromFiles() in the API to support files from a file picker
+        // or files from your local hard drive
+        // Note: the pose library adds "tmImage" object to your window (window.tmImage)
+        model = await tmImage.load(modelURL, metadataURL);
+        maxPredictions = model.getTotalClasses();
+
+        // // Convenience function to setup a webcam
+        // const flip = true; // whether to flip the webcam
+        // webcam = new tmImage.Webcam(200, 200, flip); // width, height, flip
+        // await webcam.setup(); // request access to the webcam
+        // await webcam.play();
+        // window.requestAnimationFrame(loop);
+        
+        // // append elements to the DOM
+        // document.getElementById("webcam-container").appendChild(webcam.canvas);
+        labelContainer = document.getElementById("label-container");
+        for (let i = 0; i < maxPredictions; i++) { // and class labels
+            labelContainer.appendChild(document.createElement("div"));
+        }
+    }
+
+    async function loop() {
+        // webcam.update(); // update the webcam frame
+        await predict();
+        window.requestAnimationFrame(loop);
+    }
+
+    // run the webcam image through the image model
+    async function predict() {
+        // predict can take in an image, video or canvas html element
+        const prediction = await model.predict(webcam.canvas);
+        for (let i = 0; i < maxPredictions; i++) {
+            const classPrediction =
+                prediction[i].className + ": " + prediction[i].probability.toFixed(2);
+            labelContainer.childNodes[i].innerHTML = classPrediction;
+        }
+    }
+
+    // Event listener for the "Save and Upload" button
+    const saveAndUploadBtn = document.getElementById('saveAndUploadBtn');
+    saveAndUploadBtn.addEventListener('click', saveAndUploadCanvas);
+  </script>
+</body>
+</html>

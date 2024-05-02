@@ -1,0 +1,559 @@
+
+    a:link {
+      color:#000;
+      text-decoration: none;
+    }
+    a:visited {
+      color:#000;
+    }
+    a:hover {
+      color:#33F;
+    }
+    .button {
+      background: -webkit-linear-gradient(top,#008dfd 0,#0370ea 100%);
+      border: 1px solid #076bd2;
+      border-radius: 3px;
+      color: #fff;
+      display: none;
+      font-size: 12px;
+      font-weight: bold;
+      line-height: 1.3;
+      padding: 4px 8px;
+      text-align: center;
+      text-shadow: 1px 1px 1px #076bd2;
+      letter-spacing: normal;
+    }
+    .center {
+      padding: 10px;
+      text-align: center;
+    }
+    .final {
+      color: black;
+      padding-right: 3px; 
+    }
+    .interim {
+      color: gray;
+    }
+    .info {
+      font-size: 12px;
+      text-align: center;
+      color: #777;
+      display: none; 
+    }
+    .right {
+      float: right;
+      position:relative;
+      top:0%;
+      right:0%;
+    } 
+    .sidebyside {
+      display: inline-block;
+      width: 45%;
+      min-height: 40px;
+      text-align: left;
+      vertical-align: top;
+    }
+    .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+    border-radius: 5px;
+  }
+
+  .flip-card {
+    background-color: transparent;
+    width: 150px;
+    height: 150px;
+    perspective: 1000px;
+  }
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+
+  .flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+  }
+    #headline {
+      font-size: 40px;
+      font-weight: 300;
+    }
+    #info {
+      font-size: 14px;
+      text-align: left;
+      color: #777;
+      visibility: hidden;
+    }
+    #info_pos {
+      position:relative;
+      padding-top: 3px;
+    }
+    #results {
+      font-size: 12px;
+      font-weight: bold;
+      border: 1px solid #ddd;
+      padding: 5px;
+      text-align: left;
+      min-height: 50px;
+    }
+
+    #history_areaa {
+      font-size: 12px;
+      border: 0px solid #ddd;
+      padding-top: 0px;
+      text-align: left;
+      vertical-align: bottom;
+      overflow: visible;
+      max-width: 100%;
+      min-height: 40%;
+      max-height: 40%;
+    }
+    #text_areaa {
+      font-size: 14px;
+      font-weight: bold;
+      border: 0px solid #ddd;
+      padding: 1px;
+      height: 100%;
+      max-width: 100%;
+      max-height: 100%;
+      display: inline;
+    }
+    #chatInput {
+      font-size: 14px;
+      border: 1px solid #ddd;
+      padding: 2px;
+      text-align: left;
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+      max-height: 100%;
+      display: inline;
+    }
+    
+    #imageURLId{
+    font-size: 14px;
+    font-weight: normal;
+    resize: none;
+    overflow-y: scroll;
+    }
+    #start_button {
+      border: 0;
+      background-color:transparent;
+      padding: 0;
+    }
+    #sends_button {
+      border: 0;
+      background-color:transparent;
+      padding: 0;
+    }
+    #div_language {
+      visibility:visible;
+    }
+
+    h2 { 
+    position: absolute; 
+    top: 200px; 
+    left: 0; 
+    width: 100%; 
+    }
+    div.img {
+      border: 10px solid #ccc;
+      float: center;
+      max-width: 400px;
+      max-height: 250px;
+    }
+    div.ex2 {
+      max-width: 100%;
+      margin: auto;
+      border: 3px solid #73AD21;
+    }
+    div.img:hover {
+      border: 1px solid #777;
+    }
+
+
+    div.desc {
+      padding: 15px;
+      text-align: center;
+    }
+
+    #vdo, .avcontrol {
+      max-width:100%;
+      border: 0px solid #ccc;
+      float: center;
+    }
+    #vdo {
+      display: none;
+    }
+    video {
+      width: 300px;
+      height: auto;
+      border: 0px solid #def;
+    }
+    .responsive {
+      width: 100%;
+      height: auto;
+    }
+    #panel, .flip {
+      font-size: 12px;
+      padding: 4px;
+      text-align: left;
+      background-color: transparent;
+      border: solid 1px #def;
+    }
+
+    #panel {
+      display: block;
+    }
+
+    #mydiv {
+      position: absolute;
+      z-index: 9;
+      background-color: #f1f1f1;
+      text-align: center;
+      border: 1px solid #d3d3d3;
+    }
+
+    #mydivheader {
+      padding: 5px;
+      cursor: move;
+      z-index: 10;
+      background-color: #2196F3;
+      color: #fff;
+    }
+
+
+    .sidenav {
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    
+    overflow-x: hidden;
+    padding-top: 20px;
+    padding-right: 10px;
+    }
+
+    .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    }
+
+    .sidenav a:hover {
+    color: #f1f1f1;
+    }
+
+    .main {
+    margin-right: 160px; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+    }
+
+    @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+    }
+    .accordion {
+    background-color: #eee;
+    color: blue;
+    cursor: pointer;
+    padding: 5px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    text-decoration:underline;
+    outline:solid;
+    outline-width: 1px;
+    outline-color: rgb(222, 18, 18);
+    font-size: 15px;
+    transition: 0.4s;
+    }
+
+    .active, .accordion:hover {
+    background-color: #ccc; 
+    }
+
+    .panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+    }
+    .collapsible {
+      background-color: #78f79e;
+      color: white;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+    }
+    .active, .collapsible:hover {
+      background-color: #bffc85;
+    }
+    .content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+  }
+/* Checkbox hack to control information box display */
+
+label {
+    font-size: 12px;
+    position: relative;
+    top: 2px;
+    right: 3px;
+    z-index: 5;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 10px;
+  }
+
+  input[type=checkbox] {
+     position: absolute;
+     top: -100px;
+  }
+
+  aside {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateX(100%);
+    transition: 0.3s all ease-out;
+    background-color: #ffffff;
+    padding: 1rem;
+  }
+
+  aside p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+  }
+
+  aside a {
+    color: #f40707;
+  }
+
+  /* Toggled State of information box */
+  input[type=checkbox]:checked ~ aside {
+    transform: translateX(0);
+  }
+
+
+  .video-container {
+            position: relative;
+            display: inline-block;
+  }
+
+  .overlay {
+      position: absolute;
+      /* top: 0;  */
+      left: 0;
+      bottom: 0 ;
+      width: 100%;
+      height: 39%;
+      background-color: transparent;   /* rgba(255, 255, 255, 1); Change the color and opacity as needed */
+      z-index: 1; /* Place the overlay above the video */
+  }
+        /* Slide-in pane styles */
+        .slide-pane {
+          position: fixed;
+          top: 0;
+          right: -400px;
+          width: 400px;
+          height: 100%;
+          background-color: white;
+          box-shadow: -3px 0 6px rgba(0, 0, 0, 0.3);
+          transition: right 0.3s ease-in-out;
+        }
+        
+        .pane-content {
+          padding: 10px;
+        }
+        
+        .close-slide {
+          color: #aaa;
+          float: right;
+          font-size: 28px;
+          font-weight: bold;
+          cursor: pointer;
+        }
+        /* Modal styles */
+        .modal {
+          display: none;
+          position: fixed;
+          z-index: 1;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          overflow: auto;
+          background-color: rgba(0, 0, 0, 0.7);
+        }
+        
+        .modal-content {
+          background-color: white;
+          margin: 5% auto;
+          padding: 15px;
+          border: 1px solid #888;
+          width: 70%;
+        }
+        
+        .close {
+          color: #aaa;
+          float: right;
+          font-size: 28px;
+          font-weight: bold;
+        }
+        
+        /* Slide-in pane styles */
+        /* .slide-pane {
+          position: fixed;
+          top: 0;
+          right: -400px;
+          width: 400px;
+          height: 100%;
+          background-color: white;
+          box-shadow: -3px 0 6px rgba(0, 0, 0, 0.3);
+          transition: right 0.3s ease-in-out;
+        } */
+        
+        .pane-content {
+          padding: 10px;
+        }
+        
+        /* .close-slide {
+          color: #aaa;
+          float: right;
+          font-size: 28px;
+          font-weight: bold;
+          cursor: pointer;
+        } */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            padding-top: 100px; /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+
+        /* Modal content */
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 40px;
+            border: 1px solid #888;
+            max-width: 90%; /* Set a maximum width */
+            max-height: 90%; /* Set a maximum height */
+            overflow: auto; /* Allow vertical scrolling if content overflows */
+        }
+
+        /* Close button */
+        .close {
+            color: #090909;
+            float: left;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel {
+  display: flex;
+  width: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+  flex: 0 0 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+.carousel-button-n {
+  position: absolute;
+  top: 0%;
+  right: 0px;
+  transform: translateY(50%);
+  background: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 2px 2px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.carousel-button-p {
+  position: absolute;
+  top: 0%;
+  left: 0px;
+  transform: translateY(50%);
+  background: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 2px 2px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.carousel-button:hover {
+  background: #0056b3;
+}
+        /* Add some basic styling for the icon */
+        .speaker-icon {
+            cursor: pointer;
+            padding: 5px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }

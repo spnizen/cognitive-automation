@@ -1,0 +1,88 @@
+{
+    "Article_id": "0901901",
+    "Article_name": "SPN Intro",
+    "intro": "",
+    "outro": "",
+    "images": [
+        {
+            "thumbnail": "101",
+            "iuri": "./public/images/saisridhar.jpeg",
+            "title": "Eureka - Automation as a Service for Fire Engineering",
+            "description": "Meeting Id: 101 \n\nPlease type the article/meeting/event id and press enter or click on the send button",
+            "vuri": "escape101.json",
+            "duration": 0
+        },
+        {
+            "thumbnail": "102",
+            "iuri": "image0001.jpg",
+            "title": "ESCAPE - Automation as a Service",
+            "description": "Meeting Id: 102 \n\nPlease type the article/meeting/event id and press enter or click on the send button",
+            "vuri": "aaas.json",
+            "duration": 0
+        },
+        {
+            "thumbnail": "103",
+            "iuri": "image0001.jpg",
+            "title": "Extreme-Spartan Cognitive Workbench",
+            "description": "Meeting Id: 103 \n\nPlease type the article/meeting/event id and press enter or click on the send button",
+            "vuri": "cwb.json",
+            "duration": 0
+        },
+        {
+            "thumbnail": "104",
+            "iuri": "image0001.jpg",
+            "title": "Recruitment",
+            "description": "Meeting Id: 104 \n\nPlease type the article/meeting/event id and press enter or click on the send button",
+            "vuri": "article1004.json",
+            "duration": 0
+        },
+        {
+            "thumbnail": "105",
+            "iuri": "image0001.jpg",
+            "title": "Exploring AI Models",
+            "description": "Meeting Id: 105 \n\nPlease type the article/meeting/event id and press enter or click on the send button",
+            "vuri": "001.json",
+            "duration": 0
+        },
+        {
+            "thumbnail": "106",
+            "iuri": "image0001.jpg",
+            "title": "ESCAPE - Automation as a Service",
+            "description": "Meeting Id: 106 \n\nPlease type the article/meeting/event id and press enter or click on the send button",
+            "vuri": "002.json",
+            "duration": 0
+        },
+        {
+            "thumbnail": "107",
+            "iuri": "image0001.jpg",
+            "title": "Extreme-Spartan Cognitive Workbench",
+            "description": "Meeting Id: 107 \n\nPlease type the article/meeting/event id and press enter or click on the send button",
+            "vuri": "003.json",
+            "duration": 0
+        },
+        {
+            "thumbnail": "108",
+            "iuri": "image0001.jpg",
+            "title": "Recruitment",
+            "description": "Meeting Id: 108 \n\nPlease type the article/meeting/event id and press enter or click on the send button",
+            "vuri": "004.json",
+            "duration": 0
+        },
+        {
+            "thumbnail": "109",
+            "iuri": "image0001.jpg",
+            "title": "Exploring AI Models",
+            "description": "Meeting Id: 109 \n\nPlease type the article/meeting/event id and press enter or click on the send button",
+            "vuri": "005.json",
+            "duration": 0
+        },
+        {
+            "thumbnail": "100",
+            "iuri": "image0003.jpg",
+            "title": "",
+            "description": "",
+            "vuri": "/cognitive-automation/public/videos/sridhar.idle.mp4",
+            "duration": 0.05
+        }
+    ]
+}

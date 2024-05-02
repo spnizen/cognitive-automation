@@ -1,0 +1,152 @@
+{
+  "Article_id": "",
+  "Article_name": "",
+  "intro": "",
+  "images": [
+    {
+      "thumbnail": "001",
+      "iuri": "image0001.jpg",
+      "title": "",
+      "description": "A Service Reliability Engineer (SRE) and a Service Availability Manager (SAM) both play important roles in ensuring the stability and availability of a software or technology system. However, their responsibilities and tasks vary in certain aspects.",
+      "instructor_content": "",
+      "vuri": "ES_P0001.mov",
+      "duration": 0.1
+    },
+    {
+      "thumbnail": "002",
+      "iuri": "image0001.jpg",
+      "title": "",
+      "description": "Firstly, a Service Reliability Engineer is primarily responsible for designing and implementing systems and processes to improve the reliability and scalability of a software or technology system. This includes monitoring and measuring key performance indicators (KPIs), setting up automated processes for fault detection and resolution, and continuously identifying and addressing potential risks and issues. The ultimate goal of an SRE is to reduce downtime and disruptions, and to improve the overall user experience of the system.",
+      "instructor_content": "",
+      "vuri": "ES_P0001.mov",
+      "duration": 0.1
+    },
+    {
+      "thumbnail": "003",
+      "iuri": "image0001.jpg",
+      "title": "",
+      "description": "In contrast, a Service Availability Manager focuses on the availability of a system, ensuring that it meets the agreed upon service level agreements (SLAs) with customers or stakeholders. This involves regularly monitoring and reporting on service availability, analyzing data to identify any downtimes or outages and working with the development and operations teams to implement solutions. A SAM is also responsible for conducting risk assessments and creating contingency plans to minimize interruptions to service.",
+      "instructor_content": "",
+      "vuri": "ES_P0001.mov",
+      "duration": 0.1
+    },
+    {
+      "thumbnail": "004",
+      "iuri": "image0001.jpg",
+      "title": "",
+      "description": "To give a more specific breakdown, here are some of the key job responsibilities and tasks that a Service Reliability Engineer typically performs:",
+      "instructor_content": "",
+      "vuri": "ES_P0001.mov",
+      "duration": 0.1
+    },
+    {
+      "thumbnail": "005",
+      "iuri": "image0001.jpg",
+      "title": "",
+      "description": "1. Designing and implementing monitoring systems: SREs are responsible for setting up monitoring tools to continuously track KPIs and detect potential issues or anomalies.",
+      "instructor_content": "",
+      "vuri": "ES_P0001.mov",
+      "duration": 0.1
+    },
+    {
+      "thumbnail": "006",
+      "iuri": "image0001.jpg",
+      "title": "",
+      "description": "2. Creating automation and self-healing systems: An SRE designs automated processes to detect and fix issues before they cause any disruption or downtime. This could include failover systems, auto-scaling, and automated rollback procedures.",
+      "instructor_content": "",
+      "vuri": "ES_P0001.mov",
+      "duration": 0.1
+    },
+    {
+      "thumbnail": "007",
+      "iuri": "image0001.jpg",
+      "title": "",
+      "description": "3. Investigating and troubleshooting: When issues do occur, the SRE is responsible for investigating and troubleshooting them, identifying root causes and implementing solutions.",
+      "instructor_content": "",
+      "vuri": "ES_P0001.mov",
+      "duration": 0.1
+    },
+    {
+      "thumbnail": "008",
+      "iuri": "image0001.jpg",
+      "title": "",
+      "description": "4. Performance optimization: SREs work to continuously improve the performance of a system by identifying bottlenecks and inefficiencies and proactively addressing them.",
+      "instructor_content": "",
+      "vuri": "ES_P0001.mov",
+      "duration": 0.1
+    },
+    {
+      "thumbnail": "009",
+      "iuri": "image0001.jpg",
+      "title": "",
+      "description": "5. Risk identification and management: SREs conduct risk assessments and work with cross-functional teams to design and implement mitigation strategies to reduce the impact of potential risks.",
+      "instructor_content": "",
+      "vuri": "ES_P0001.mov",
+      "duration": 0.1
+    },
+    {
+      "thumbnail": "010",
+      "iuri": "image0001.jpg",
+      "title": "",
+      "description": "On the other hand, here are some of the common responsibilities and tasks of a Service Availability Manager:",
+      "instructor_content": "",
+      "vuri": "ES_P0001.mov",
+      "duration": 0.1
+    },
+    {
+      "thumbnail": "011",
+      "iuri": "image0001.jpg",
+      "title": "",
+      "description": "1. Monitor and report on service availability: SAMs regularly monitor service availability and performance against SLAs and report any downtime or disruptions to stakeholders.",
+      "instructor_content": "",
+      "vuri": "ES_P0001.mov",
+      "duration": 0.1
+    },
+    {
+      "thumbnail": "012",
+      "iuri": "image0001.jpg",
+      "title": "",
+      "description": "2. Analyze data and identify trends: SAMs analyze data on service availability and performance to identify any recurring issues or trends that may indicate potential risks.",
+      "instructor_content": "",
+      "vuri": "ES_P0001.mov",
+      "duration": 0.1
+    },
+    {
+      "thumbnail": "013",
+      "iuri": "image0001.jpg",
+      "title": "",
+      "description": "3. Communicate with stakeholders: A SAM is responsible for communicating regularly with customers and other stakeholders regarding service availability, any planned maintenance, and any downtime or outages.",
+      "instructor_content": "",
+      "vuri": "ES_P0001.mov",
+      "duration": 0.1
+    },
+    {
+      "thumbnail": "014",
+      "iuri": "image0001.jpg",
+      "title": "",
+      "description": "4. Coordinate with development and operations teams: In the event of any service disruptions, the SAM works closely with the development and operations teams to resolve issues quickly and effectively.",
+      "instructor_content": "",
+      "vuri": "ES_P0001.mov",
+      "duration": 0.1
+    },
+    {
+      "thumbnail": "015",
+      "iuri": "image0001.jpg",
+      "title": "",
+      "description": "5. Create contingency plans: A SAM creates contingency plans to minimize the impact of any potential downtimes or outages on service availability, and ensures that teams are prepared to handle unexpected disruptions.",
+      "instructor_content": "",
+      "vuri": "ES_P0001.mov",
+      "duration": 0.1
+    },
+    {
+      "thumbnail": "016",
+      "iuri": "image0001.jpg",
+      "title": "",
+      "description": "In summary, while both a Service Reliability Engineer and a Service Availability Manager are essential roles in maintaining a stable and available system, the SRE focuses on implementing systems and processes to improve reliability and scalability, while the SAM focuses on monitoring and managing service availability and coordinating responses to any disruptions.",
+      "instructor_content": "",
+      "vuri": "ES_P0001.mov",
+      "duration": 0.1
+    }
+  ],
+  "outro": ""
+}
